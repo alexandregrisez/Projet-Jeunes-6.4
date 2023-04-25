@@ -1,0 +1,85 @@
+
+/*
+-----------------------------------------------
+PORTAIL
+-----------------------------------------------
+*/
+
+.dégradé1{
+    background-image: linear-gradient(to right, whitesmoke, lightgrey);
+}
+.slogan{
+    text-align: center;
+    color: rgb(43, 1, 139);
+}
+#slogan1 {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+#slogan2 {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+#portail {
+    text-align: center;
+}
+#entrée{
+    text-decoration:none ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: red;
+    font-size: 30px;
+}
+.pieddepage{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    text-align: center;
+    background-color: white;
+    color: grey;
+    position:absolute;
+    top:5 px;
+    bottom:0;
+    right:0;
+    left:0;
+
+}
+
+.paragraphepieddepage{
+    font-size: 16px;
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*
+-----------------------------------------------
+PAGE DE PRESENTATION
+-----------------------------------------------
+*/
+
+.entête {
+    background-image: radial-gradient(at 20% 100%, rgb(255, 255, 255),rgb(189, 187, 187));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: white;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    height: 20%;
+}
+
+.imageentête{
+    float: left;
+    position: relative;
+    margin-left: 0%;
+    margin-right: 80%;
+    width: 20%;
+    height: 90%;
+}
+
+.titreentête{
+    font-size: 30px;
+    position:relative;
+    right: 0%;
+    left:50%;
+    bottom:0%;
+}
