@@ -128,12 +128,13 @@ PAGE DE PRESENTATION
 
 #lien1{
     position: absolute;
-    top: 30%;
+    padding-top: 10%;
+    top: 0%;
     bottom:0;
     right:0;
     left:0;
     width:100%;
-    height:70%;
+    height:100%;
     text-decoration:none ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     color: #e60080;
@@ -160,8 +161,9 @@ PAGE DE PRESENTATION
 }
 
 #lien2{
+    padding-top: 10%;
     position: absolute;
-    top: 30%;
+    top: 0;
     bottom:0;
     right:0;
     left:0;
@@ -192,8 +194,9 @@ PAGE DE PRESENTATION
 }
 
 #lien3{
+    padding-top: 10%;
     position: absolute;
-    top: 30%;
+    top: 0;
     bottom:0;
     right:0;
     left:0;
@@ -226,8 +229,9 @@ PAGE DE PRESENTATION
 }
 
 #lien4{
+    padding-top: 10%;
     position: absolute;
-    top: 30%;
+    top: 0;
     bottom:0;
     right:0;
     left:0;
@@ -412,3 +416,231 @@ PAGE DE PRESENTATION
     bottom:0;
     top:50%;
 }
+
+/*
+-----------------------------------------------
+PAGE PARTENAIRES
+-----------------------------------------------
+*/
+
+#titreentete1{
+    color:rgb(78, 78, 78);
+    font-size: 40pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    position:absolute;
+    width: 50%;
+    height:50%;
+    bottom:47%;
+    top:3%;
+    left:50%;
+    right:0;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#corps2{
+    position: absolute;
+    height:70%;
+    width:100%;
+    top:30%;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+#phrase1{
+    text-align: center;
+    position: absolute;
+    height:10%;
+    width:70%;
+    top:0;
+    bottom:90%;
+    left:15%;
+    right:15%;
+    color:grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#charte{
+    text-decoration: none;
+    color:#1f039c;
+
+}
+
+#phrase2{
+    text-align: center;
+    position: absolute;
+    height:10%;
+    width:70%;
+    top:90%;
+    bottom:0%;
+    left:15%;
+    right:15%;
+    color:grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#partenaires{
+    position: absolute;
+    height:65%;
+    width:80%;
+    top:17.5%;
+    bottom:17.5%;
+    left:10%;
+    right:10%;
+}
+
+#partenaire1{
+    position: absolute;
+    width:20%;
+    height:50%;
+    top:0;
+    bottom:50%;
+    left:2.5%;
+    right:77.5%;
+}
+
+#partenaire1IMG{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#partenaire2{
+    position: absolute;
+    width:20%;
+    height:50%;
+    top:0;
+    bottom:50%;
+    left:27.5%;
+    right:52.5%;
+}
+
+#partenaire2IMG{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#partenaire3{
+    position: absolute;
+    width:20%;
+    height:50%;
+    top:0;
+    bottom:50%;
+    left:52.5%;
+    right:27.5%;
+}
+
+#partenaire3IMG{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#partenaire4{
+    position: absolute;
+    width:20%;
+    height:50%;
+    top:0;
+    bottom:50%;
+    left:77.5%;
+    right:2.5%;
+}
+
+#partenaire4IMG{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#partenaire5{
+    position: absolute;
+    width:20%;
+    height:50%;
+    top:50%;
+    bottom:0;
+    left:2.5%;
+    right:77.5%;
+}
+
+#partenaire5IMG{
+    position:absolute;
+    width: 70%;
+    height: 70%;
+    left:15%;
+    right:15%;
+    top:15%;
+    bottom:15%;
+}
+
+#partenaire6{
+    position: absolute;
+    width:20%;
+    height:50%;
+    top:50%;
+    bottom:0;
+    left:27.5%;
+    right:52.5%;
+}
+
+#partenaire6IMG{
+    position:absolute;
+    width: 70%;
+    height: 70%;
+    left:15%;
+    right:15%;
+    top:15%;
+    bottom:15%;
+}
+
+#partenaire7{
+    position: absolute;
+    width:25%;
+    height:50%;
+    top:50%;
+    bottom:0;
+    left:52.5%;
+    right:27.5%;
+}
+
+#partenaire7IMG{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#partenaire8{
+    position: absolute;
+    width:25%;
+    height:50%;
+    top:50%;
+    bottom:0;
+    left:77.5%;
+    right:2.5%;
+}
+
+#partenaire8IMG{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+-----------------------------------------------
+PAGE ACCUEIL JEUNE
+-----------------------------------------------
+*/
+
+/*
+-----------------------------------------------
+PAGE ACCUEIL REFERENT
+-----------------------------------------------
+*/
+
+/*
+-----------------------------------------------
+PAGE ACCUEIL CONSULTANT
+-----------------------------------------------
+*/
