@@ -89,8 +89,8 @@ PAGE DE PRESENTATION
     height: 90%;
 }
 
-.titreentete{
-    text-align: justify;
+#titreentete3{
+    text-align: right;
     margin-bottom: 7px;
     font-size: 27.5px;
     position:absolute;
@@ -262,6 +262,10 @@ PAGE DE PRESENTATION
 
 .pasdemargetop{
     margin-top: 6px;
+}
+
+.pasdemargetop2{
+    margin-top: 0px;
 }
 
 #texte1{
@@ -438,6 +442,35 @@ PAGE PARTENAIRES
     margin-top: 0;
     margin-bottom: 0;
 }
+
+#quart8{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0%;
+    left:75%;
+    width:25%;
+    height:100%;
+    text-align: center;
+    background-color: grey;
+}
+
+
+#lien8{
+    padding-top: 10%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-decoration:none ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: aliceblue;
+    font-size: 25px;
+}
+
 
 #corps2{
     position: absolute;
@@ -633,14 +666,236 @@ PAGE ACCUEIL JEUNE
 -----------------------------------------------
 */
 
+#titreentete2{
+    color:#e60080;
+    font-size: 40pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    position:absolute;
+    width: 50%;
+    height:50%;
+    bottom:47%;
+    top:3%;
+    left:50%;
+    right:0;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+#quart5{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:75%;
+    left:0%;
+    width:25%;
+    height:100%;
+    text-align: center;
+    background-color: #e60080;
+    
+}
+
+#lien5{
+    position: absolute;
+    padding-top: 10%;
+    top: 0%;
+    bottom:0;
+    right:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-decoration:none ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+#fond1{
+    z-index: -1;
+    opacity: 60%;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
+}
+
+#texte2{
+    color: rgb(83, 83, 83);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    text-align: justify;
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    top:10%;
+    bottom: 40%;
+    left: 15%;
+    right: 15%;
+}
+
+#special{
+    text-align: center;
+    color: #e60080;
+}
+
+#boutons{
+    position: absolute;
+    height: 20%;
+    width: 40%;
+    top: 60%;
+    bottom: 20%;
+    left: 30%;
+    right: 30%;
+}
+
+#moitie7{
+    border: 3px solid grey;
+    background-image: radial-gradient(at 0% 0%, rgb(255, 255, 255), rgb(212, 212, 212));
+    position: absolute;
+    width: 35%;
+    height: 70%;
+    top: 15%;
+    bottom: 15%;
+    left: 0%;
+    right: 65%;
+    overflow: hidden;
+}
+
+#moitie8{
+    border: 3px solid grey;
+    background-image: radial-gradient(at 0% 0%, rgb(255, 255, 255), rgb(207, 206, 206));
+    position: absolute;
+    width: 35%;
+    height: 70%;
+    top: 15%;
+    bottom: 15%;
+    left: 65%;
+    right: 0%;
+    overflow: hidden;
+}
+
+#lien9{
+    padding-top: 12%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #e60080;
+    font-size: 14pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#lien10{
+    padding-top: 12%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #e60080;
+    font-size: 14pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+
 /*
 -----------------------------------------------
 PAGE ACCUEIL REFERENT
 -----------------------------------------------
 */
 
+#titreentete4{
+    color:#14a537;
+    font-size: 40pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    position:absolute;
+    width: 50%;
+    height:50%;
+    bottom:47%;
+    top:3%;
+    left:50%;
+    right:0;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#quart6{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:50%;
+    left:25%;
+    width:25%;
+    height:100%;
+    text-align: center;
+    background-color:#14a537;
+}
+
+#lien6{
+    padding-top: 10%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-decoration:none ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: aliceblue;
+    font-size: 25px;
+}
+
 /*
 -----------------------------------------------
 PAGE ACCUEIL CONSULTANT
 -----------------------------------------------
 */
+
+#titreentete5{
+    color:#1096d5;
+    font-size: 40pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    position:absolute;
+    width: 50%;
+    height:50%;
+    bottom:47%;
+    top:3%;
+    left:50%;
+    right:0;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#quart7{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:25%;
+    left:50%;
+    width:25%;
+    height:100%;
+    background-color:#1096d5;
+}
+
+#lien7{
+    padding-top: 10%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    text-decoration:none ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: aliceblue;
+    font-size: 25px;
+}
