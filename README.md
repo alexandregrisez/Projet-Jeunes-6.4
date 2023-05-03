@@ -17,15 +17,26 @@ Les modules Référent et Consultant ne sont accessibles que par le suivi d'un l
 #### **--LISTE DES FICHIERS--**
 
 + MODULE VISITEUR
-  - Portail.html
-  - Presentation.html
-  - Jeune.html
-  - Referent.html
-  - Consultant.html
-  - CSSGeneral.css
+  - Portail.html  
+  - Portail.css  
+  - Presentation.html  
+  - Presentation.css  
+  - Jeune.html  
+  - Jeune.css  
+  - Referent.html  
+  - Referent.css  
+  - Consultant.html  
+  - Consultant.css  
+  - Partenaires.html  
+  - Partenaires.css  
+  - Inscription.html  
+  - Inscription.php  
+  - Inscription.css  
+  - Connexion.html  
+  - Connexion.css  
+  - Connexion.php  
 + MODULE JEUNE
-  - Inscription.php
-  - Connexion.php
+
 + MODULE RÉFÉRENT
 + MODULE CONSULTANT
 
