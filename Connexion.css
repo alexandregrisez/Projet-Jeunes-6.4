@@ -1,0 +1,142 @@
+html{
+    height:100%;
+    width: 100%;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+.nomargin{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/* */
+#entete {
+    background-image: radial-gradient(at 20% 100%, rgb(255, 255, 255),rgb(189, 187, 187));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    height: 20%;
+}
+
+/* */
+#imageentete{
+    float: left;
+    position: absolute;
+    margin-left: 0%;
+    margin-right: 80%;
+    width: 20%;
+    height: 90%;
+}
+
+/* */
+#titreentete1{
+    color: #e60080;
+    font-size: 6.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    position:absolute;
+    width: 50%;
+    height:50%;
+    bottom:47%;
+    top:3%;
+    left:48%;
+    right:2%;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#titreentete2{
+    text-align: right;
+    margin-bottom: 1vmin;
+    font-size: 2.6vw;
+    position:absolute;
+    right: 0%;
+    left:40%;
+    bottom:0%;
+    margin-right: 2vmin;
+}
+
+#corps{
+    position: absolute;
+    width:100%;
+    height:80%;
+    top:20%;
+    bottom:0;
+    left:0;
+    right:0;
+    color:rgb(87, 87, 87);
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#login{
+    color:#e60080;
+    text-align: center;
+    position: absolute;
+    width:50%;
+    height:50%;
+    top:20%;
+    bottom:30%;
+    left:25%;
+    right:25%;
+}
+
+#fond{
+    z-index: -1;
+    opacity: 60%;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
+}
+
+label{
+    color:rgb(104, 104, 104);
+}
+
+#boutonformulaire{
+    font-size: 1.8vw;
+    border: 2px solid #e60080;
+    background-color: rgb(235, 235, 235);
+    color:#e60080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#boutonformulaire:hover{
+    border: 2px solid #e60080;
+    background-color: rgb(196, 196, 196);
+    color:#e60080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#annonceur{
+    text-align: center;
+    color:red;
+    font-size: 1.8vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    position: absolute;
+    height: 10%;
+    bottom:20%;
+    width: 50%;
+    top:70%;
+    left:25%;
+    right:25%;
+}
