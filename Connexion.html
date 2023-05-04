@@ -1,21 +1,28 @@
 <!DOCTYPE html>
+<!--HTML DE LA PAGE DE CONNEXION DU MODULE VISITEUR-->
 <html>
 <head>
     <title> Connexion - Jeunes 6.4</title>
     <link rel="stylesheet" href="Connexion.css">
+    <!--Les attributs name et content permettent ici d'utiliser les unités dynamiques vw,vh,vmin... dans le CSS-->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body class="nomargin">
-
+    <!--Une div qui correspond à l'entête des pages du site.-->
     <div id="entete">
         <a href="Presentation.html"> <img src="Images/logo1.png" id="imageentete"> </a>
         <h1 id="titreentete1"> JEUNE </h1>
         <p id="titreentete2"> Je donne de la valeur à mon engagement </p>
     </div>
 
+    <!--La zone principale de la page.-->
     <div id="corps">
+
+        <!--Le fond de la page est la version "jeune" du logo de JEUNES 6.4-->
         <img id="fond" src="Images/logo2.JPG">
+
+        <!--La zone du formulaire de connexion-->
         <div id="login">
             <h2 id="titre"> Accéder à son espace Jeune </h2>
             <form action="Connexion.php" method="post">

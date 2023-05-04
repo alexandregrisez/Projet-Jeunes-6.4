@@ -1,3 +1,42 @@
+/*
+CSS DE LA PAGE D'INSCRIPTION
+*/
+
+/*
+Remarques générales :
+
+- Les éléments sont ordonnés (grossièrement) dans leur ordre d'apparition dans la page HTML.
+- Les noms des IDs ont été choisis pour être les plus explicites possibles, quand ce n'est pas le cas est précisé
+ce à quoi ils correspondent.
+- Il a été choisi d'utiliser les IDs plutôt que les classes pour réduire les dépendances entre les styles des 
+éléments.
+- Les positionnements sont presque tous en absolus. Cela a permis d'arranger très précisément le design de la page
+pour se conformer mieux à ce qui est proposé par le client. On a vu qu'il n'était pas d'usage de faire ça de nos jours
+mais c'est ce qui a le mieux fonctionné et permis d'avancer rapidement.
+- Pour que les pages puissent s'adapter un petit peu aux utilisateurs, les unités vh, vw, etc. ont été utilisées
+pour que le site convienne à tout type "classique" de fenêtre. Le site est cependant mieux optimisé pour les formats 
+paysages. Il n'est pas esthétique mais est utilisable en format portrait.
+- La police utilisée par le client dans les documents n'est pas celle que nous utilisons car nous ne l'avons pas 
+trouvée, mais on a choisi une police qui puisse conserver l'esthétique demandée.
+- Au départ, il était prévu d'utiliser un fichier CSS global pour tout le site -- pour réduire la quantité de fichiers -- 
+mais on s'est aperçu assez vite que les IDs étaient plus clairs et que les recherches dans les fichiers étaient plus 
+simples en associant à chaque HTML son CSS, quitte à devoir copier-coller des styles comme celui de l'entête dans 
+chaque fichier.
+- Comme beaucoup du CSS a été trouvé à force d'essai-erreur et que les styles sont très similaires les uns avec
+les autres, il y a peu de commentaires.
+*/
+
+/*
+- La fonction radial-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au centre du 
+cercle qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- La fonction linear-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au sens du
+dégradé qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- Pour le fond des pages web, un z-index de -1 permet de faire passer tout autre élément au premier plan devant le fond.
+L'opacité permet de rendre les couleurs de l'image moins aggressives.
+- La sous-classe hover est utilisée quand il faut qu'un élément change de style au passage de la souris.
+*/
+
+
 html{
     height:100%;
     width: 100%;
@@ -21,7 +60,7 @@ body{
     margin-bottom: 0;
 }
 
-/* */
+/*Une div qui correspond à l'entête des pages du site*/
 #entete {
     background-image: radial-gradient(at 20% 100%, rgb(255, 255, 255),rgb(189, 187, 187));
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
@@ -33,7 +72,6 @@ body{
     height: 20%;
 }
 
-/* */
 #imageentete{
     float: left;
     position: absolute;
@@ -44,7 +82,7 @@ body{
 }
 
 
-/* */
+/*Le grand titre de l'entête*/
 #titreentete1{
     color: #e60080;
     font-size: 6.5vw;
@@ -61,6 +99,7 @@ body{
     margin-bottom: 0;
 }
 
+/*La phrase d'accroche de l'entête.*/
 #titreentete2{
     text-align: right;
     margin-bottom: 1vmin;
@@ -118,17 +157,6 @@ body{
     right:48%;
 }
 
-#annonceur{
-    line-height: 1vh;
-    font-size: 1.7vw;
-    position: absolute;
-    height: 20%;
-    width:50%;
-    bottom:0;
-    top:80%;
-    left:2%;
-    right:48%;
-}
 
 label{
     font-size: 2vw;
@@ -150,21 +178,8 @@ label{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-.rouge{
-    color:red;
-}
 
-.vert{
-    color:rgb(4, 187, 4);
-}
-
-#retouraccueil{
-    text-decoration:none ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-    color: rgb(247, 101, 198);
-    font-size: 16pt;
-}
-
+/*Une div qui rappelle à l'utilisateur qu'il peut se connecter s'il a déjà un compte sur le site.*/
 #rappelconnexion{
     font-size: 1.8vw;
     text-align: center;
@@ -181,6 +196,12 @@ label{
     background-image: linear-gradient(to right,rgb(246, 246, 247),rgb(240, 239, 239));
 }
 
+/*"Vous avez déjà un compte ?"*/
+#phrase{
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
 #lienconnexion{
     position: absolute;
     height:35%;
@@ -195,7 +216,32 @@ label{
     font-size: 2.3vw;
 }
 
-#phrase{
-    margin-top: 1vh;
-    margin-bottom: 0;
+
+/*Une div qui sert à transmettre des messages à l'utilisateur grâce à PHP.*/
+#annonceur{
+    line-height: 1vh;
+    font-size: 1.7vw;
+    position: absolute;
+    height: 20%;
+    width:50%;
+    bottom:0;
+    top:80%;
+    left:2%;
+    right:48%;
+}
+
+.rouge{
+    color:red;
+}
+
+.vert{
+    color:rgb(4, 187, 4);
+}
+
+/*Lien de retour à l'accueil proposé par l'annonceur.*/
+#retouraccueil{
+    text-decoration:none ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: rgb(247, 101, 198);
+    font-size: 16pt;
 }

@@ -1,3 +1,42 @@
+/*
+CSS DE LA PAGE DE PRESENTATION 
+*/
+
+/*
+Remarques générales :
+
+- Les éléments sont ordonnés (grossièrement) dans leur ordre d'apparition dans la page HTML.
+- Les noms des IDs ont été choisis pour être les plus explicites possibles, quand ce n'est pas le cas est précisé
+ce à quoi ils correspondent.
+- Il a été choisi d'utiliser les IDs plutôt que les classes pour réduire les dépendances entre les styles des 
+éléments.
+- Les positionnements sont presque tous en absolus. Cela a permis d'arranger très précisément le design de la page
+pour se conformer mieux à ce qui est proposé par le client. On a vu qu'il n'était pas d'usage de faire ça de nos jours
+mais c'est ce qui a le mieux fonctionné et permis d'avancer rapidement.
+- Pour que les pages puissent s'adapter un petit peu aux utilisateurs, les unités vh, vw, etc. ont été utilisées
+pour que le site convienne à tout type "classique" de fenêtre. Le site est cependant mieux optimisé pour les formats 
+paysages. Il n'est pas esthétique mais est utilisable en format portrait.
+- La police utilisée par le client dans les documents n'est pas celle que nous utilisons car nous ne l'avons pas 
+trouvée, mais on a choisi une police qui puisse conserver l'esthétique demandée.
+- Au départ, il était prévu d'utiliser un fichier CSS global pour tout le site -- pour réduire la quantité de fichiers -- 
+mais on s'est aperçu assez vite que les IDs étaient plus clairs et que les recherches dans les fichiers étaient plus 
+simples en associant à chaque HTML son CSS, quitte à devoir copier-coller des styles comme celui de l'entête dans 
+chaque fichier.
+- Comme beaucoup du CSS a été trouvé à force d'essai-erreur et que les styles sont très similaires les uns avec
+les autres, il y a peu de commentaires.
+*/
+
+/*
+- La fonction radial-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au centre du 
+cercle qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- La fonction linear-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au sens du
+dégradé qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- Pour le fond des pages web, un z-index de -1 permet de faire passer tout autre élément au premier plan devant le fond.
+L'opacité permet de rendre les couleurs de l'image moins aggressives.
+- La sous-classe hover est utilisée quand il faut qu'un élément change de style au passage de la souris.
+*/
+
+
 html{
     height:100%;
     width: 100%;
@@ -21,7 +60,7 @@ body{
     margin-bottom: 0;
 }
 
-/* */
+/*Une div qui correspond à l'entête des pages du site*/
 #entete {
     background-image: radial-gradient(at 20% 100%, rgb(255, 255, 255),rgb(189, 187, 187));
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
@@ -33,7 +72,7 @@ body{
     height: 20%;
 }
 
-/* */
+
 #imageentete{
     float: left;
     position: absolute;
@@ -43,7 +82,7 @@ body{
     height: 90%;
 }
 
-/* */
+/*La phrase d'accroche de l'entête.*/
 #titreentete{
     text-align: right;
     margin-bottom: 1vmin;
@@ -55,7 +94,7 @@ body{
     margin-right: 2vmin;
 }
 
-/* */
+/*Le menu est une bande divisée en 4 parties égales (les "quarts" ci-dessous) qui contiennent chacune un lien.*/
 #menu{
     background-image: radial-gradient(at 20% 50%,rgb(255, 255, 255), rgb(238, 238, 238));
     position: absolute;
@@ -67,7 +106,7 @@ body{
     height:10%;
 }
 
-/* */
+
 #quart1{
     position: absolute;
     top: 0;
@@ -80,12 +119,11 @@ body{
     
 }
 
-/* */
 #quart1:hover{
     background-color: #e60080;
 }
 
-/* */
+
 #lien1{
     position: absolute;
     padding-top: 3.5vh;
@@ -101,12 +139,12 @@ body{
     font-size: 2.2vw;
 }
 
-/* */
+
 #lien1:hover{
     color:aliceblue;
 }
 
-/* */
+
 #quart2{
     position: absolute;
     top: 0;
@@ -118,12 +156,12 @@ body{
     text-align: center;
 }
 
-/* */
+
 #quart2:hover{
     background-color:#14a537;
 }
 
-/* */
+
 #lien2{
     padding-top: 3.5vh;
     position: absolute;
@@ -139,12 +177,12 @@ body{
     font-size: 2.2vw;
 }
 
-/* */
+
 #lien2:hover{
     color:aliceblue;
 }
 
-/* */
+
 #quart3{
     position: absolute;
     top: 0;
@@ -155,12 +193,12 @@ body{
     height:100%;
 }
 
-/* */
+
 #quart3:hover{
     background-color:#1096d5;
 }
 
-/* */
+
 #lien3{
     padding-top: 3.5vh;
     position: absolute;
@@ -177,12 +215,12 @@ body{
     font-size: 2.2vw;
 }
 
-/* */
+
 #lien3:hover{
     color:aliceblue;
 }
 
-/* */
+
 #quart4{
     position: absolute;
     top: 0;
@@ -194,12 +232,12 @@ body{
     text-align: center;
 }
 
-/* */
+
 #quart4:hover{
     background-color:grey;
 }
 
-/* */
+
 #lien4{
     padding-top: 3.5vh;
     position: absolute;
@@ -215,12 +253,27 @@ body{
     font-size: 2.2vw;
 }
 
-/* */
+
 #lien4:hover{
     color:aliceblue;
 }
 
-/* */
+
+
+.pasdemargebottom{
+    margin-bottom: 0px;
+}
+
+
+.pasdemargetop{
+    margin-top: 6px;
+}
+
+
+.pasdemargetop2{
+    margin-top: 0px;
+}
+
 #corps{
     line-height: 2vh;
     position:absolute;
@@ -231,22 +284,7 @@ body{
     margin-left: 0.7vmin;
 }
 
-/* */
-.pasdemargebottom{
-    margin-bottom: 0px;
-}
-
-/* */
-.pasdemargetop{
-    margin-top: 6px;
-}
-
-/* */
-.pasdemargetop2{
-    margin-top: 0px;
-}
-
-/* */
+/*Le texte est une div divisée en 3 parties (les trois tiers).*/
 #texte{
     color:grey;
     font-size: 1.2vw;
@@ -257,7 +295,7 @@ body{
     top:0;
 }
 
-/* */
+
 #tiers1{
     position: absolute;
     width: 33%;
@@ -267,7 +305,7 @@ body{
     bottom:0;
 }
 
-/* */
+
 #tiers2{
     position: absolute;
     width: 33%;
@@ -277,7 +315,7 @@ body{
     bottom:0;
 }
 
-/* */
+
 #tiers3{
     position: absolute;
     width: 33%;
@@ -287,7 +325,8 @@ body{
     bottom:0;
 }
 
-/* */
+/*Une div divisée en 3 (etape1,2,3). Chaque étape sera elle même divisée en 2 (deux moitiés).
+Tout cela représente les boîtes qu'on peut voir sur la page.*/
 #etapes{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     position: absolute;
@@ -299,7 +338,7 @@ body{
     top:55%;
 }
 
-/* */
+
 #etape1{
     border :solid #e60080 3px;
     position: absolute;
@@ -310,7 +349,7 @@ body{
     bottom:0;
 }
 
-/* */
+
 #moitie1{
     font-size: 2vmin;
     text-align: center;
@@ -324,7 +363,7 @@ body{
     bottom:50%;
 }
 
-/* */
+
 #moitie2{
     font-size: 1.2vw;
     text-align: center;
@@ -338,7 +377,7 @@ body{
     top:50%;
 }
 
-/* */
+
 #etape2{
     border:solid #bad204 3px;
     position: absolute;
@@ -349,7 +388,7 @@ body{
     bottom:0;
 }
 
-/* */
+
 #moitie3{
     font-size: 2vmin;
     text-align: center;
@@ -363,7 +402,7 @@ body{
     bottom:50%;
 }
 
-/* */
+
 #moitie4{
     font-size: 1.1vw;
     text-align: center;
@@ -377,7 +416,7 @@ body{
     top:50%;
 }
 
-/* */
+
 #etape3{
     border:solid #1096d5 2px;
     position: absolute;
@@ -388,7 +427,7 @@ body{
     bottom:0;
 }
 
-/* */
+
 #moitie5{
     font-size: 2vmin;
     text-align: center;
@@ -402,7 +441,7 @@ body{
     bottom:50%;
 }
 
-/* */
+
 #moitie6{
     font-size: 1.2vw;
     text-align: center;
