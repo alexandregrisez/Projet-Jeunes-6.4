@@ -36,9 +36,22 @@ Les modules Référent et Consultant ne sont accessibles que par le suivi d'un l
   - Connexion.css  
   - Connexion.php  
 + MODULE JEUNE
-
-+ MODULE RÉFÉRENT
-+ MODULE CONSULTANT
+  - CompteJeune.php
+  - CompteJeune.css
+  - ModificationProfil.php
+  - ModificationProfil.css
+  - DemandeDeReference.php
+  - DemandeDeReference.css
+  - ListeReferences.php
+  - ListeReferences.css
++ MODULE RÉFÉRENT 
+  - ResumeDemandeDeReference.php  
+  - ResumeDemandeDeReference.css  
+  - PageDeConfirmation.html  
+  - PageDeConfirmation.css  
++ MODULE CONSULTANT  
+  - ResumeConsultant.php
+  - ResumeConsultant.css
 
 Plus de détails sur l'architecture du projet sont à trouver dans le rapport joint.
 
