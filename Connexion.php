@@ -140,12 +140,11 @@ $mdp=$_POST['mdp'];
 // Si l'utilisateur a réussi sa connexion, on initialise une session et on l'envoie sur son espace avec header
 if(veriflogin($email,$mdp)==1){
     session_start();
+	$_SESSION['derniereconnexion']=time();
     $_SESSION['email']=$email;
     $_SESSION['nom']=recherchenom($email);
     $_SESSION['prenom']=rechercheprenom($email);
     $_SESSION['ddn']=rechercheddn($email);
-    header('Location: MonCompte.php');
-}
 else{
     $erreur=1;
 }
