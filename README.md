@@ -46,7 +46,9 @@ Les modules Référent et Consultant ne sont accessibles que par le suivi d'un l
   - ListeReferences.css
 + MODULE RÉFÉRENT 
   - ResumeDemandeDeReference.php  
-  - ResumeDemandeDeReference.css  
+  - ResumeDemandeDeReference.css 
+  - ModificationInfosReferent.php
+  - ModificationInfosReferent.css
   - PageDeConfirmation.html  
   - PageDeConfirmation.css  
 + MODULE CONSULTANT  
