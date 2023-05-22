@@ -29,21 +29,21 @@ Les modules Référent et Consultant ne sont accessibles que par le suivi d'un l
   - Consultant.css  
   - Partenaires.html  
   - Partenaires.css  
++ MODULE JEUNE
   - Inscription.html  
   - Inscription.php  
   - Inscription.css  
   - Connexion.html  
   - Connexion.css  
   - Connexion.php  
-+ MODULE JEUNE
   - CompteJeune.php
   - CompteJeune.css
   - ModificationProfil.php
   - ModificationProfil.css
   - DemandeDeReference.php
   - DemandeDeReference.css
-  - ListeReferences.php
-  - ListeReferences.css
+  - Resume.php
+  - Resume.css
 + MODULE RÉFÉRENT 
   - ResumeDemandeDeReference.php  
   - ResumeDemandeDeReference.css 
