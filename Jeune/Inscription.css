@@ -123,21 +123,23 @@ body{
     left: 15%;
 }
 
+#invisible{
+    z-index:-2;
+    position:relative;
+    height:20%;
+    top:0;
+}
+
 #corps{
-    position: absolute;
+    position: relative;
     width:100%;
-    height:80%;
-    top:20%;
-    bottom:0;
-    left:0;
-    right:0;
     color:grey;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
 #titre{
-    font-size: 3vw;
-    position: absolute;
+    font-size: 2.5vw;
+    position: relative;
     width:50%;
     height:10%;
     top: 0%;
@@ -148,13 +150,9 @@ body{
 }
 
 #formulaire{
-    position: absolute;
+    position: relative;
     width:50%;
-    height:50%;
-    top:18%;
-    bottom:32%;
     left:2%;
-    right:48%;
 }
 
 
@@ -181,15 +179,14 @@ label{
 
 /*Une div qui rappelle à l'utilisateur qu'il peut se connecter s'il a déjà un compte sur le site.*/
 #rappelconnexion{
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     text-align: center;
-    position: absolute;
+    position:absolute;
     width:30%;
-    height:25%;
-    top:5%;
-    bottom: 70%;
+    height:35%;
     left:65%;
     right:5%;
+    top:20%;
     border:2px dotted #e60080;
     color:rgb(158, 157, 157);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
@@ -204,16 +201,15 @@ label{
 
 #lienconnexion{
     position: absolute;
-    height:35%;
+    height:20%;
     width: 100%;
-    top:60%;
-    bottom:5%;
+    bottom:0;
     right:0;
     left:0;
     text-decoration:none ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     color: #e60080;
-    font-size: 2.3vw;
+    font-size: 1.4vw;
 }
 
 
@@ -221,13 +217,10 @@ label{
 #annonceur{
     line-height: 1vh;
     font-size: 1.7vw;
-    position: absolute;
+    position: relative;
     height: 20%;
     width:50%;
-    bottom:0;
-    top:80%;
     left:2%;
-    right:48%;
 }
 
 .rouge{

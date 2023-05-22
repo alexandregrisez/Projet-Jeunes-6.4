@@ -59,6 +59,10 @@ function creationid(){
 }
 
 function demandedereference($id,$nom,$prenom,$metier,$email1,$desc,$domaine,$date1,$date2,$qual1,$qual2,$qual3,$qual4,$email2){
+    if(!file_exists("demandes.txt")){
+    	$temp=fopen("demandes.txt","w");
+    	fclose($temp);
+    }
     $database=fopen("demandes.txt","r+");
     if(!$database){
         return 1;
@@ -124,22 +128,24 @@ function affichedemande($id){
     fclose($database);
     
     echo "<div id='demande'>
-              <p> Vous (".$emailjeune.") avez émis la demande n°".$id." :</p>
+              <p> Vous (".$emailjeune.") avez émis la demande de référence n°".$id." :</p>
               <div id='tiers1'>
-                  <p> Votre référent : </p>
+                  <p id='affichage1'> Votre référent : </p>
                   <p> Nom : ".$nom."</p>
                   <p> Prénom : ".$prenom."</p>
                   <p> E-mail : ".$emailref."</p>
                   <p> Métier : ".$metier."</p>
               </div>
+              </br>
               <div id='tiers2'>
-                  <p> Votre engagement : </p>
+                  <p id='affichage2'> Votre engagement : </p>
                   <p> Domaine : ".$domaine."</p>
                   <p> Du ".$date1." au ".$date2." </p>
                   <p> Description : ".$desc."</p>
               </div>
+              </br>
               <div id='tiers3'>
-                  <p> Vos qualités démontrées : </p>";
+                  <p id='affichage3'> Vos qualités démontrées : </p>";
     $nb=count($qualites);
     if($nb==1){
         echo "<p>-".$qualites[0]."</p>";
@@ -161,6 +167,7 @@ function affichedemande($id){
     }
     echo "    </div>
           </div>";
+          
     return 0;
 }
 
@@ -178,7 +185,7 @@ if(isset($_SESSION['derniereconnexion']) && time() - $_SESSION['derniereconnexio
 $erreur=-1;
 $cas=0;
 
-if(!isset($_POST['nom']) && !isset($_GET['nom'])){
+if(!isset($_POST['nom']) && !isset($_GET['id'])){
     $erreur=5;
 }
 
@@ -238,14 +245,31 @@ if($cas==2){
 <html>
 <head>
     <title> Demande de référence - Jeunes 6.4</title>
-    <link rel="stylesheet" href="Resume.css">
+    <?php
+    	if($cas==1){
+    		echo "<link rel='stylesheet' type='text/css' href='Resume.css'";
+    	}
+    	else{
+    		echo "<link rel='stylesheet' type='text/css' href='../Resume.css'>";
+    	}
+    ?>
     <!--Les attributs name et content permettent ici d'utiliser les unités dynamiques vw,vh,vmin... dans le CSS-->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body class="nomargin">
     <div id="entete">
-        <a href="../Visiteur/Presentation.html"> <img src="../Images/logo1.png" id="imageentete"> </a>
+        <a href="../Visiteur/Presentation.html">
+        <?php
+        	if($cas==1){
+    			echo "<img src='../Images/logo1.png' id='imageentete'>";
+    		}
+    		else{
+    			echo "<img src='../../Images/logo1.png' id='imageentete'>" ;
+    		}
+        ?>
+        
+        </a>
         <h1 id="titreentete1"> ESPACE JEUNE </h1>
     </div>
     <div id="invisible"> </div>
@@ -278,6 +302,7 @@ if($cas==2){
         <?php
             if($cas==1){
                 affichedemande($id);
+                echo "</br>";
             }
             else if($cas==2){
                 affichedemande($_GET['id']);
@@ -287,7 +312,16 @@ if($cas==2){
             }
         ?>
     </div>
-    <div id=divlien> <a id="lien" href="CompteJeune.php"> Retour à votre espace</a> </div>
+    <div id=divlien> <a id="lien"
+    <?php
+    	if($cas==1){
+    		echo "href='CompteJeune.php'";
+    	}
+    	else{
+    		echo "href='../CompteJeune.php'";
+    	}
+    ?>
+    > Retour à votre espace</a> </div>
 
 </body>
 </html>

@@ -133,6 +133,12 @@ function rechercheddn($email){
 
 $erreur=0;
 
+if(isset($_GET['deco'])){
+	session_unset();
+	session_destroy();
+	header('Location: ../Connexion.html');
+}
+
 // Les variables du formulaire
 if(isset($_POST['email']) && isset($_POST['mdp'])){
     $email=$_POST['email'];

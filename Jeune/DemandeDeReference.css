@@ -87,13 +87,13 @@ body{
     font-size: 6.5vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     position:absolute;
-    width: 50%;
+    width: 70%;
     height:50%;
     bottom:47%;
     top:3%;
-    left:48%;
+    left:28%;
     right:2%;
-    text-align: right;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }

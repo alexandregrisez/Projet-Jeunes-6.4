@@ -89,13 +89,13 @@ body{
     font-size: 6.5vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     position:absolute;
-    width: 50%;
+    width: 70%;
     height:50%;
     bottom:47%;
     top:3%;
-    left:48%;
+    left:38%;
     right:2%;
-    text-align: right;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -148,6 +148,7 @@ body{
 }
 
 #tiers3{
+    text-align:center;
     height: auto;
     border:#e42b90 dotted 3px;
     background-image: linear-gradient(to bottom,#f0f0f0,#d3d3d3);
@@ -168,3 +169,27 @@ body{
 #rouge{
 	color:rgb(255, 0, 0);
 }
+
+#divlien{
+	position:relative;
+	text-align:center;
+	width:100%;
+}
+
+#lien{
+	font-size:2vw;
+	text-decoration:none;
+	color:#e60080;
+}
+
+#affichage1{
+	color:green;
+}
+
+#affichage2{
+	color:#e42b90;
+}
+#affichage3{
+	color:#e42b90;
+}
+

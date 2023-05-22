@@ -87,13 +87,13 @@ body{
     font-size: 6.5vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     position:absolute;
-    width: 50%;
+    width: 70%;
     height:50%;
     bottom:47%;
     top:3%;
-    left:48%;
+    left:38%;
     right:2%;
-    text-align: right;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -280,6 +280,7 @@ body{
 }
 
 .referent{
+	line-height:9vh;
 	text-align: center;
 	position:absolute;
 	width:40%;
@@ -291,6 +292,7 @@ body{
 }
 
 .statut{
+	line-height:9vh;
 	position:absolute;
 	width:20%;
 	height:100%;
@@ -301,6 +303,7 @@ body{
 }
 
 .iddemande{
+	line-height:9vh;
 	position:absolute;
 	width:25%;
 	height:100%;
@@ -313,11 +316,12 @@ body{
 .details{
 	position:absolute;
 	width:15%;
-	height:50%;
+	height:80%;
+	top:20%;
+	bottom:0;
 	left:85%;
 	right:0;
-	top:25%;
-	bottom:25%;
+	line-height:9vh;
 	text-decoration: none;
 	color: #e60080;
 }
@@ -332,6 +336,19 @@ body{
 
 #message{
 	text-align: center;
+}
+
+#divlien{
+	position:relative;
+	text-align:center;
+	width:100%;
+}
+
+#lien{
+	font-size:2vw;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+	text-decoration:none;
+	color:#e60080;
 }
 
 

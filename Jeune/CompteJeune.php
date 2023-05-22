@@ -101,11 +101,16 @@ if(isset($_SESSION['derniereconnexion']) && time() - $_SESSION['derniereconnexio
 						echo "<p class='statut'> Statut : <i class='statut1'> En revue </i></p>";
 					}
 					echo "<p class='iddemande'> Numéro demande : ".$liste[$i][1]."</p>";
-					echo "<a href='http://abcdef' class='details'> Détails </a>";
+					echo "<a href='Resume.php/?id=".$liste[$i][1]."' class='details'> Détails </a>";
 					echo "</div>";
 				}
 			}
 		?>
 	</div>
+	</br>
+	</br>
+	<div id=divlien> <a id="lien" href='Connexion.php/?deco=1'> Déconnexion </a> </div>
+	</br>
+	</br>
 </body>
 </html>
