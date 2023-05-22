@@ -1,5 +1,5 @@
 <?php
-
+ session_start();
 /*
 Une fonction qui permet de vérifier si un couple e-mail / mot de passe est correct.
 Elle prend les deux en paramètre.
@@ -134,19 +134,34 @@ function rechercheddn($email){
 $erreur=0;
 
 // Les variables du formulaire
-$email=$_POST['email'];
-$mdp=$_POST['mdp'];
+if(isset($_POST['email']) && isset($_POST['mdp'])){
+    $email=$_POST['email'];
+    $mdp=$_POST['mdp'];
+}
+
 
 // Si l'utilisateur a réussi sa connexion, on initialise une session et on l'envoie sur son espace avec header
 if(veriflogin($email,$mdp)==1){
-    session_start();
 	$_SESSION['derniereconnexion']=time();
     $_SESSION['email']=$email;
     $_SESSION['nom']=recherchenom($email);
     $_SESSION['prenom']=rechercheprenom($email);
     $_SESSION['ddn']=rechercheddn($email);
+    header('Location: CompteJeune.php');
+}
 else{
     $erreur=1;
+}
+
+if(isset($_SESSION['erreur'])){
+    if($_SESSION['erreur']==2){
+        $erreur=2;
+    }
+    else if($_SESSION['erreur']==3){
+        session_unset();
+		session_destroy();
+        $erreur=3;
+    }
 }
 ?>
 
@@ -164,7 +179,7 @@ else{
 <body class="nomargin">
     <!--Une div qui correspond à l'entête des pages du site.-->
     <div id="entete">
-        <a href="Presentation.html"> <img src="Images/logo1.png" id="imageentete"> </a>
+        <a href="../Visiteur/Presentation.html"> <img src="../Images/logo1.png" id="imageentete"> </a>
         <h1 id="titreentete1"> JEUNE </h1>
         <p id="titreentete2"> Je donne de la valeur à mon engagement </p>
     </div>
@@ -173,7 +188,7 @@ else{
     <div id="corps">
 
         <!--Le fond de la page est la version "jeune" du logo de JEUNES 6.4-->
-        <img id="fond" src="Images/logo2.JPG">
+        <img id="fond" src="../Images/logo2.JPG">
 
         <!--La zone du formulaire de connexion-->
         <div id="login">
@@ -190,8 +205,16 @@ else{
         <!--La zone de l'annonceur, utilisée pour transmettre des messages via PHP-->
         <div id="annonceur"> 
             <?php
-                // Si l'utilisateur n'est pas redirigé par le code PHP d'avant, c'est forcément qu'il y a eu une erreur
-                echo "<p>L'adresse e-mail ou mot de passe est incorrect.</p>";
+                if($erreur==2){
+                    echo "<p>Veuillez vous connecter pour accéder à votre espace.</p>";
+                }
+                else if($erreur==3){
+                    echo "<p>Votre session a expiré, veuillez vous reconnecter.</p>";
+                }
+                else{
+                    echo "<p>L'adresse e-mail ou mot de passe est incorrect.</p>";
+                }
+                
             ?>
         </div>
     </div>

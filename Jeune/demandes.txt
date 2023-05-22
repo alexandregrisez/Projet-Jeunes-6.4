@@ -1,0 +1,66 @@
+alexx@gmail.com,20005,1,desc,date,date,milieu,Harrison,Rick,email,metier,blabla
+
+
+
+
+patricka@gmail.com,20005,1,desc,date,date,milieu,Harrison,Rick,email,metier,blabla
+alexx@gmail.com,20020,0,desc,date,date,milieu,Propre,Monsieur,email,metier,blabla
+
+
+
+
+patricka@gmail.com,20005,1,desc,date,date,milieu,Harrison,Rick,email,metier,blabla
+alexx@gmail.com,20030,1,desc,date,date,milieu,Vador,Dark,email,metier,blabla
+
+
+
+
+fox@gmail.com,100,1,aaa,2023-05-03,2023-05-05,filsdepute,de,man,reference@gmail.com,de,Communication;Réactivité;;
+fox@gmail.com,100,1,aaa,2023-05-02,2023-05-10,a,a,a,a@gmail.com,a,Communication;Persévérance;;
+fox@gmail.com,100,1,aaaa,2023-05-02,2023-05-25,iii,a,aa,a@gmail.com,aaa,Communication;Rigueur;;
+fox@gmail.com,100,1,aaaa,2023-05-02,2023-05-25,iii,a,aa,a@gmail.com,aaa,Communication;Rigueur;;
+fox@gmail.com,100,1,aaaa,2023-05-02,2023-05-25,iii,a,aa,a@gmail.com,aaa,Communication;Rigueur;;
+fox@gmail.com,100,1,aaaa,2023-05-02,2023-05-25,iii,a,aa,a@gmail.com,aaa,Communication;Rigueur;;
+fox@gmail.com,100,1,aaaa,2023-05-02,2023-05-25,iii,a,aa,a@gmail.com,aaa,Communication;Rigueur;;
+fox@gmail.com,100,1,aaaa,2023-05-02,2023-05-25,iii,a,aa,a@gmail.com,aaa,Communication;Rigueur;;
+fox@gmail.com,100,1,aaaa,2023-05-02,2023-05-25,iii,a,aa,a@gmail.com,aaa,Communication;Rigueur;Persévérance;Prise de recul
+alexx@gmail.com,100,1,uuu,2023-05-03,2023-05-26,e,a,a,a@gmail.com,a,Communication;Bienveillance;Prise de recul
+alexx@gmail.com,100,1,uuu,2023-05-03,2023-05-26,e,a,a,a@gmail.com,a,Communication;Bienveillance;Prise de recul
+alexx@gmail.com,100,1,uuu,2023-05-03,2023-05-26,e,a,a,a@gmail.com,a,Communication;Bienveillance;Prise de recul
+alexx@gmail.com,100,1,uuu,2023-05-03,2023-05-26,e,a,a,a@gmail.com,a,Communication;Bienveillance;Prise de recul
+alexx@gmail.com,20031,1,uuu,2023-05-03,2023-05-26,e,a,a,a@gmail.com,a,Communication;Bienveillance;Prise de recul
+alexx@gmail.com,20032,1,uuu,2023-05-03,2023-05-26,e,a,a,a@gmail.com,a,Communication;Bienveillance;Prise de recul
+ag@gmail.com,20033,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20034,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20035,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20036,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20037,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20038,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20039,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20040,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20041,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20042,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20043,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20044,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20045,1,j'ai boxé wallah c'était pas mal,2023-05-01,2023-05-31,sport,mustafa,wallah,mustafalaboxe@gmail.com,boxeur,Enthousiasme;Réactivité;Adaptation;Rapidité
+ag@gmail.com,20046,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20047,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20048,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20049,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20050,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20051,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20052,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20053,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20054,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20055,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20056,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20057,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20058,1,Il m'a appris a être une glace,2023-05-09,2023-05-04,Restauration,Mr,Freeze,mrfreeze@gmail.com,Glace,Rigueur;Adaptation;Curiosité
+ag@gmail.com,20059,1,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,2023-05-17,2023-05-25,z,a,a,a@gmail.com,a,Communication
+ag@gmail.com,20060,1,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,2023-05-17,2023-05-25,z,a,a,a@gmail.com,a,Communication
+ag@gmail.com,20061,1,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,2023-05-17,2023-05-25,z,a,a,a@gmail.com,a,Communication
+ag@gmail.com,20062,1,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,2023-05-17,2023-05-25,z,a,a,a@gmail.com,a,Communication
+ag@gmail.com,20063,1,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,2023-05-17,2023-05-25,z,a,a,a@gmail.com,a,Communication
+ag@gmail.com,20064,1,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,2023-05-17,2023-05-25,z,a,a,a@gmail.com,a,Communication
+ag@gmail.com,20065,1,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,2023-05-17,2023-05-25,z,a,a,a@gmail.com,a,Communication
+ag@gmail.com,20066,1,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX,2023-05-17,2023-05-25,z,a,a,a@gmail.com,a,Communication
