@@ -93,13 +93,12 @@ body{
     height:50%;
     bottom:47%;
     top:3%;
-    left:38%;
+    left:28%;
     right:2%;
-    text-align: center;
+    text-align: right;
     margin-top: 0;
     margin-bottom: 0;
 }
-
 
 
 
@@ -173,6 +172,8 @@ body{
 #divlien{
 	position:relative;
 	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
 	width:100%;
 }
 
@@ -180,6 +181,10 @@ body{
 	font-size:2vw;
 	text-decoration:none;
 	color:#e60080;
+}
+
+#lien:hover{
+	text-decoration:underline;
 }
 
 #affichage1{

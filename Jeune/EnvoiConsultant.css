@@ -81,6 +81,7 @@ body{
     height: 90%;
 }
 
+
 /*Le grand titre de l'entête*/
 #titreentete1{
     color: #e60080;
@@ -98,116 +99,65 @@ body{
     margin-bottom: 0;
 }
 
-/*La phrase d'accroche de l'entête.*/
-#titreentete2{
-    text-align: right;
-    margin-bottom: 1vmin;
-    font-size: 2.6vw;
-    position:absolute;
-    right: 0%;
-    left:40%;
-    bottom:0%;
-    margin-right: 2vmin;
+
+
+#titre{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #e60080;
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-
 #corps{
-    position: absolute;
-    width:100%;
-    height:60%;
-    top:20%;
-    bottom:20%;
-    left:0;
-    right:0;
+    position: relative;
+    width:90%;
+    height:100%;
+    left:5%;
+    right:5%;
     color:rgb(87, 87, 87);
     font-size: 1.5vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-#troisoptions{
-	position: absolute;
-	height: 70%;
-	width: 40%;
-	top:15%;
-	bottom:15%;
-	right:5%;
-	left:55%;
-}
-
-#infosperso{
-	text-align: center;
-	border: 2px solid #e60080;
-	background-image: linear-gradient(to bottom, white,rgb(238, 238, 238));
-	position: absolute;
-	height: 80%;
-	width: 50%;
-	top:10%;
-	bottom:10%;
-	right:48%;
-	left:2%;
-}
-
-#txt1{
-	text-decoration: underline;
-	color:#e60080;
-	font-size: 2vw;
-}
-
-#txt2{
-	position:absolute;
-	bottom:0;
-	left:23%;
-}
-
-#lien2{
-	text-decoration: none;
-    color: #e60080;
-}
-
-
-#creationref{
-	position: absolute;
-	height: 30%;
-	width: 100%;
-	top:0;
-	bottom:70%;
-	right:0;
-	left:0;
-}
-
-#envoirefs{
-	position: absolute;
-	height: 30%;
-	width: 100%;
-	top:35%;
-	bottom:35%;
-	right:0;
-	left:0;
-}
-
-#inclusionCV{
-	position: absolute;
-	height: 30%;
-	width: 100%;
-	top:70%;
-	bottom:0;
-	right:0;
-	left:0;
-}
 
 #invisible{
-	position: relative;
-	height: 80%;
-	width: 100%;
-	top:0;
-	bottom:20%;
-	right:0;
-	left:0;
-	z-index: -2;
+    z-index:-2;
+    position:relative;
+    height:20%;
+    top:0;
 }
 
+.demande{
+	text-align:center;
+	line-height:9vh;
+	background-image:linear-gradient(to bottom,#fff,rgb(224, 224, 224));
+	border: solid 1px #e60080;
+	height:10%;
 
+}
 
+#boutonformulaire{
+    position:relative;
+    width:20%;
+    left:40%;
+    right:40%;
+    height:10%;
+    font-size: 1.5vw;
+    border: 2px solid #e60080;
+    background-color: rgb(235, 235, 235);
+    color:#e60080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#boutonformulaire:hover{
+    border: 2px solid #e60080;
+    background-color: rgb(196, 196, 196);
+    color:#e60080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
 
 #fond{
     z-index: -1;
@@ -220,27 +170,18 @@ body{
     right: 15%;
     left: 15%;
 }
-
-
-.bouton{
-    font-size: 1.8vw;
-    border: 2px solid #e60080;
-    background-color: rgb(245, 245, 245);
-    color:#e60080;
+#titre{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #e60080;
+    font-size: 2vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-.bouton:hover{
-    border: 2px solid #e60080;
-    background-color: rgb(196, 196, 196);
-    color:#e60080;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-}
-
-.lien{
-    padding-top: 3vh;
-    position: absolute;
-    height: 100%;
+#lien{
+    position: relative;
     width: 100%;
     text-align: center;
     text-decoration: none;
@@ -249,111 +190,25 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-
-#listerefs{
-	background-image: linear-gradient(to right,white,rgb(224, 224, 224));
-	border: #e60080 solid 2px;
-	position: relative;
-	left:15%;
-	right:15%;
-	width:70%;
-	color: rgb(78, 78, 78);
-    font-size: 1.5vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-}
-
-#vosdemandes{
-	text-align: center;
-	width:100%;
-	color:#e60080;
-	text-decoration: underline;
-}
-
-.demande{
-	border:#e60080 solid 1px;
-	border-left: 0px;
-	position:relative;
-	width:100%;
-	left:0;
-	right:0;
-	height:12vh;
-}
-
-.referent{
-	text-align: center;
-	position:absolute;
-	width:40%;
-	height:100%;
-	left:0;
-	right:60%;
-	top:0;
-	bottom:0;
-}
-
-.statut{
-	position:absolute;
-	width:20%;
-	height:100%;
-	left:40%;
-	right:40%;
-	top:0;
-	bottom:0;
-}
-
-.iddemande{
-	position:absolute;
-	width:25%;
-	height:100%;
-	left:60%;
-	right:15%;
-	top:0;
-	bottom:0;
-}
-
-.details{
-	position:absolute;
-	width:15%;
-	height:80%;
-	top:20%;
-	bottom:0;
-	left:85%;
-	right:0;
-	line-height:4vh;
-	text-decoration: none;
-	color: #e60080;
-}
-
-.details:hover{
-	text-decoration: underline;
-}
-
-.statut0{
-	color:green;
-}
-
-.statut1{
-	color:orangered;
-}
-
-#message{
-	text-align: center;
-}
-
-#divlien{
-	position:relative;
-	text-align:center;
-	width:100%;
-}
-
-#lien{
-	font-size:2vw;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-	text-decoration:none;
-	color:#e60080;
-}
-
 #lien:hover{
-	text-decoration:underline;
+    text-decoration: underline;
 }
 
+#formulaire{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+#txt1{
+    color:#03a310;
+}
+
+#txt2{
+    color:#e60080;
+}
+
+#txt3{
+    color: #e60080;
+}
 

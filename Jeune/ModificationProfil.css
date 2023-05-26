@@ -161,7 +161,7 @@ body{
     position: relative;
     width: 100%;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
     color: #e60080;
     font-size: 2vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
@@ -175,6 +175,10 @@ body{
     color: #e60080;
     font-size: 2vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#lien:hover{
+	text-decoration:underline;    
 }
 
 

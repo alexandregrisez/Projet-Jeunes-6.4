@@ -72,7 +72,7 @@ if(isset($_SESSION['derniereconnexion']) && time() - $_SESSION['derniereconnexio
 				<a class="lien" href="DemandeDeReference.php">Créer une demande de référence </a>
 			</div>
 			<div id=envoirefs class="bouton">
-				<a class="lien" href="DemandeDeReference.php">Envoyer ses références </a>
+				<a class="lien" href="EnvoiConsultant.php">Envoyer ses références </a>
 			</div>
 			<div id=inclusionCV class="bouton">
 				<a class="lien" href="DemandeDeReference.php">Inclure ses références dans son CV </a>
@@ -100,7 +100,7 @@ if(isset($_SESSION['derniereconnexion']) && time() - $_SESSION['derniereconnexio
 					else{
 						echo "<p class='statut'> Statut : <i class='statut1'> En revue </i></p>";
 					}
-					echo "<p class='iddemande'> Numéro demande : ".$liste[$i][1]."</p>";
+					echo "<p class='iddemande'> N° demande : ".$liste[$i][1]."</p>";
 					echo "<a href='Resume.php/?id=".$liste[$i][1]."' class='details'> Détails </a>";
 					echo "</div>";
 				}

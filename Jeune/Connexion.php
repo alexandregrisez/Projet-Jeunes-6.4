@@ -189,12 +189,9 @@ if(isset($_SESSION['erreur'])){
         <h1 id="titreentete1"> JEUNE </h1>
         <p id="titreentete2"> Je donne de la valeur à mon engagement </p>
     </div>
-
+    <div id="invisible"> </div>
     <!--La zone principale de la page.-->
     <div id="corps">
-
-        <!--Le fond de la page est la version "jeune" du logo de JEUNES 6.4-->
-        <img id="fond" src="../Images/logo2.JPG">
 
         <!--La zone du formulaire de connexion-->
         <div id="login">

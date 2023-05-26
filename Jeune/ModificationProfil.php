@@ -156,7 +156,7 @@ if(isset($_POST['nom'])){
     <div id=invisible></div>
 	<div id="corps">
 		<img id="fond" src="../Images/logo2.JPG">
-        <p id="titre"> Modification de votre profil </p>
+        <p id="titre"> Modification de votre profil :</p>
         <p> <b>Veuillez saisir vos données personnelles : </b></p>
 		<div id="formulaire">
             <form method='post' action='ModificationProfil.php'>

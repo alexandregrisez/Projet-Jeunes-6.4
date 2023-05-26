@@ -33,7 +33,6 @@ if(isset($_SESSION['derniereconnexion']) && time() - $_SESSION['derniereconnexio
 		<img id="fond" src="../Images/logo2.JPG">
         <p id="titre"> Création d'une demande de référence :</p>
         </br>
-        <div id=divlien> <a id="lien" href="CompteJeune.php"> Retour </a> </div>
         <p> <b>Veuillez compléter ce formulaire : </b></p>
 		<div id="formulaire">
             <form method='post' action='Resume.php'>
@@ -94,7 +93,10 @@ if(isset($_SESSION['derniereconnexion']) && time() - $_SESSION['derniereconnexio
                 </div>
 		</div>
         <input type="submit" id="boutonformulaire" value="Valider">
+        
         </form>
+        <div id=divlien> <a id="lien" href="CompteJeune.php"> Retour </a> </div>
+        
     </div>
 	
 	
