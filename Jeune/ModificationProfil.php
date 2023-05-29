@@ -1,5 +1,11 @@
 <?php
+/*
+Cette page permet au jeune de modifier son profil.
+*/
 
+/*
+Cette fonction prend un email en paramètre et renvoie 1 si l'email existe dans le fichier des comptes utilisateurs et 0 sinon
+*/
 function recherchecompte($mail){
     // Vérification de l'existence du fichier de données
     if(file_exists("comptes.txt")==false){
@@ -31,8 +37,15 @@ function recherchecompte($mail){
     }
 }
 
+/*
+Cette fonction modifie le compte jeune associé à $email en remplaçant les champs par $nom,$prenom,$ddn,$nvemail
+Elle renvoie 0 s'il n'y a pas de problème lors de l'exécution, un autre entier sinon
+*/
 function modifcompte($email,$nom,$prenom,$ddn,$nvemail){
+    // La procédure est de copier entièrement le fichier comptes.txt, sauf sur la ligne à modifier qui est remplacée par 
+    // la nouvelle version du compte
     $database=fopen("comptes.txt","r");
+    // Un fichier temporaire est créé
     $temp=fopen("temp.txt","w");
     if((!$database) || (!$temp)){
         return 1;
@@ -40,18 +53,22 @@ function modifcompte($email,$nom,$prenom,$ddn,$nvemail){
     $buffer="123";
     $tab=[];
     $ok=-1;
+    // Le parcours du fichier est le même que précédemment
     while($buffer!=false){
         $buffer=fgets($database);
         if($buffer!=false){
             $tab=explode(",",$buffer);
             if(isset($tab[3])){
+                // SI l'email correspond, on réécrit la ligne du compte du jeune.
                 if($email==$tab[3]){
                     $ok=0;
                     $mdp=$tab[4];
+                    // ok = 1 si il y a un problème avec l'écriture
                     if(fwrite($temp,$nom.",".$prenom.",".$ddn.",".$nvemail.",".$mdp."\n")==false){
                         $ok=1;
                     }
                 }
+                // Si l'email de la ligne ne correspond pas à celui du jeune qui modifie son compte, on copie la ligne dans temp
                 else{
                     fputs($temp,$buffer);
                 }
@@ -61,18 +78,26 @@ function modifcompte($email,$nom,$prenom,$ddn,$nvemail){
     fclose($database);
     fclose($temp);
     
+    // Si pas de problème, temp devient le nouveau comptes.txt
     if($ok==0){
         unlink("comptes.txt");
         rename("temp.txt","comptes.txt");
         return 0;
     }
+    // Sinon, on préserve toutes les informations en supprimant temp et en gardant comptes.txt
     else{
         unlink("temp.txt");
         return 1;
     }
 }
 
+/*
+Lorsqu'un jeune modifie son email avec la modification du compte, ses demandes doivent continuer d'exister sur son nouveau
+compte. Cette fonction assure cela.
+Elle prend l'ancien ainsi que le nouveau emails du jeune
+*/
 function modifdemandes($email,$nvemail){
+    // Même principe que la fonction précédente, mais sur le fichier des demandes
     $database=fopen("demandes.txt","r");
     $temp=fopen("temp.txt","w");
     if((!$database) || (!$temp)){
@@ -111,6 +136,10 @@ function modifdemandes($email,$nvemail){
     }
 }
 
+// Vérification de l'état de la session.
+// Cela est nécéssaire sur le module Jeune car l'utilisateur est connecté où déconnecté.
+// Si l'utilisateur n'est pas connecté, il ne doit pas être sur la page, il est renvoyé à la page de connexion avec l'erreur 2
+// Si l'utilisateur est connecté depuis trop de temps, sa session expire avec l'erreur 3 (ici 20 minutes).
 session_start();
 if(!(isset($_SESSION['derniereconnexion']))){
 	$_SESSION['erreur']=2;
@@ -122,23 +151,34 @@ if(isset($_SESSION['derniereconnexion']) && time() - $_SESSION['derniereconnexio
 		header('Location: Connexion.php');
 }
 ?>
+
 <?php
+// Deux erreurs pour la modification de comptes.txt et celle de demandes.txt
 $erreur=-1;
 $erreur2=-1;
 
+// Si l'utilisateur a envoyé le formulaire, traitement des informations.
 if(isset($_POST['nom'])){
+
+    // Cas où l'utilisateur change son email pour un qui existe déjà dans la base de données
     if( ($_SESSION['email']!=$_POST['email']) && (recherchecompte($_POST['email'])==1)){
         $erreur=5;
     }
+
+    // Il ne faut pas de virgules dans les champs, comme c'est notre séparateur dans le code 
+    // On aurait pu choisir un séparateur moins commun
     if(strpos($_POST['nom'],',')!=false || strpos($_POST['prenom'],',')!=false){
         $erreur=6;
     }
+
+    // Si pas d'erreur, on fait les deux modifications.
     if($erreur==-1){
         $erreur=modifcompte($_SESSION['email'],$_POST['nom'],$_POST['prenom'],$_POST['ddn'],$_POST['email']);
         $erreur2=modifdemandes($_SESSION['email'],$_POST['email']);
     }
 }
 ?>
+<!DOCTYPE html>
 <html>
 <head>
     <title> Votre Espace - Jeunes 6.4</title>
@@ -153,7 +193,12 @@ if(isset($_POST['nom'])){
         <a href="../Visiteur/Presentation.html"> <img src="../Images/logo1.png" id="imageentete"> </a>
         <h1 id="titreentete1"> ESPACE JEUNE </h1>
     </div>
+
+    <!--Div invisible en positionnement relatif pour remplir la place que prendrait normalement l'entête sans 
+    positionnement absolu.-->
+    <!--Cela pour ne pas que le corps et l'entête se chevauchent.-->
     <div id=invisible></div>
+
 	<div id="corps">
 		<img id="fond" src="../Images/logo2.JPG">
         <p id="titre"> Modification de votre profil :</p>
@@ -172,14 +217,14 @@ if(isset($_POST['nom'])){
             </form>
 		</div>
 
+        <!-- Div qui sert au PHP à relayer des messages à l'utilisateur-->
         <div id=annonceur>
             <?php
-                /**/ 
+                // En fonction de la valeur de $erreur/$erreu2, un message différent est envoyé.
+                // Il vaut mieux que l'utilisateur se reconnecte après une modification de son compte.
                 if($erreur==0 && $erreur2==0){
                     echo "<p class='vert'> Votre profil a bien été modifié.</p>";
                     echo "<p class='vert'> Vous allez devoir vous reconnecter.</p>";
-                    session_unset();
-                    session_destroy();
                 }
                 else if($erreur==-1){
                     echo "";
@@ -193,6 +238,8 @@ if(isset($_POST['nom'])){
                 else{
                     echo "<p id='rouge'> Une erreur est survenue, veuillez réessayer.</p>";
                 }
+                session_unset();
+                session_destroy();
             ?>
         </div>
 

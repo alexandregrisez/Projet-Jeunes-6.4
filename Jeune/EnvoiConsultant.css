@@ -99,17 +99,18 @@ body{
     margin-bottom: 0;
 }
 
-
-
-#titre{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    text-decoration: underline;
-    color: #e60080;
-    font-size: 2vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+/*
+Div invisible en positionnement relatif pour remplir la place que prendrait normalement l'entête sans 
+positionnement absolu.
+Cela pour ne pas que le corps et l'entête se chevauchent.
+*/
+#invisible{
+    z-index:-2;
+    position:relative;
+    height:20%;
+    top:0;
 }
+
 
 #corps{
     position: relative;
@@ -122,14 +123,42 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-
-#invisible{
-    z-index:-2;
-    position:relative;
-    height:20%;
-    top:0;
+#fond{
+    z-index: -1;
+    opacity: 60%;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
 }
 
+
+#titre{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #e60080;
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.rouge{
+    color:red;
+}
+
+.vert{
+    color:green;
+}
+
+
+#txt2{
+    color:#e60080;
+}
+/*Une div qui contient une demande de référence à sélectionner ou non*/
 .demande{
 	text-align:center;
 	line-height:9vh;
@@ -138,6 +167,7 @@ body{
 	height:10%;
 
 }
+
 
 #boutonformulaire{
     position:relative;
@@ -159,26 +189,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-#fond{
-    z-index: -1;
-    opacity: 60%;
-    position: absolute;
-    width: 70%;
-    height: 80%;
-    top: 10%;
-    bottom: 10%;
-    right: 15%;
-    left: 15%;
-}
-#titre{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    text-decoration: underline;
-    color: #e60080;
-    font-size: 2vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-}
+
 
 #lien{
     position: relative;
@@ -194,21 +205,5 @@ body{
     text-decoration: underline;
 }
 
-#formulaire{
-    position:relative;
-    height:100%;
-    width:100%;
-}
 
-#txt1{
-    color:#03a310;
-}
-
-#txt2{
-    color:#e60080;
-}
-
-#txt3{
-    color: #e60080;
-}
 

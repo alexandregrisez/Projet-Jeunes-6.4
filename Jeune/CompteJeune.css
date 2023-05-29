@@ -98,18 +98,6 @@ body{
     margin-bottom: 0;
 }
 
-/*La phrase d'accroche de l'entête.*/
-#titreentete2{
-    text-align: right;
-    margin-bottom: 1vmin;
-    font-size: 2.6vw;
-    position:absolute;
-    right: 0%;
-    left:40%;
-    bottom:0%;
-    margin-right: 2vmin;
-}
-
 
 #corps{
     position: absolute;
@@ -124,16 +112,20 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-#troisoptions{
-	position: absolute;
-	height: 70%;
-	width: 40%;
-	top:15%;
-	bottom:15%;
-	right:5%;
-	left:55%;
+#fond{
+    z-index: -1;
+    opacity: 60%;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
 }
 
+
+/*Une div qui contient les informations du jeune.*/
 #infosperso{
 	text-align: center;
 	border: 2px solid #e60080;
@@ -164,7 +156,20 @@ body{
     color: #e60080;
 }
 
+/* 
+Une div qui contient trois boutons (liens) pour accéder aux fonctionnalités du site.
+*/
+#troisoptions{
+	position: absolute;
+	height: 70%;
+	width: 40%;
+	top:15%;
+	bottom:15%;
+	right:5%;
+	left:55%;
+}
 
+/* Bouton 1 */
 #creationref{
 	position: absolute;
 	height: 30%;
@@ -175,6 +180,7 @@ body{
 	left:0;
 }
 
+/* Bouton 2 */
 #envoirefs{
 	position: absolute;
 	height: 30%;
@@ -185,6 +191,7 @@ body{
 	left:0;
 }
 
+/* Bouton 3 */
 #inclusionCV{
 	position: absolute;
 	height: 30%;
@@ -195,6 +202,11 @@ body{
 	left:0;
 }
 
+/*
+Div invisible en positionnement relatif pour remplir la place que prendrait normalement tout ce qu'il y a avant sans 
+positionnement absolu.
+Cela pour ne pas que le corps la partie qui suit se chevauchent.
+*/
 #invisible{
 	position: relative;
 	height: 80%;
@@ -206,22 +218,7 @@ body{
 	z-index: -2;
 }
 
-
-
-
-#fond{
-    z-index: -1;
-    opacity: 60%;
-    position: absolute;
-    width: 70%;
-    height: 80%;
-    top: 10%;
-    bottom: 10%;
-    right: 15%;
-    left: 15%;
-}
-
-
+/* Mise en forme des boutons*/ 
 .bouton{
     font-size: 1.8vw;
     border: 2px solid #e60080;
@@ -249,7 +246,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-
+/*Une div qui contient la liste des demandes de références de l'utilisateur*/
 #listerefs{
 	background-image: linear-gradient(to right,white,rgb(224, 224, 224));
 	border: #e60080 solid 2px;
@@ -269,6 +266,8 @@ body{
 	text-decoration: underline;
 }
 
+
+/*Mise en forme d'une demande (1 div avec 4 champs)*/
 .demande{
 	border:#e60080 solid 1px;
 	border-left: 0px;
@@ -339,6 +338,7 @@ body{
 	text-align: center;
 }
 
+/* Lien de déconnexion */
 #divlien{
 	position:relative;
 	text-align:center;

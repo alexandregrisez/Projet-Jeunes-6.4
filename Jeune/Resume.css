@@ -103,12 +103,45 @@ body{
 
 
 
-
+/*
+Div invisible en positionnement relatif pour remplir la place que prendrait normalement l'entête sans 
+positionnement absolu.
+Cela pour ne pas que le corps et l'entête se chevauchent.
+*/
 #invisible{
     z-index:-2;
     position:relative;
     height:20%;
     top:0;
+}
+
+/*
+Div qui sert au PHP à relayer des messages à l'utilisateur
+*/
+#annonceur{
+    position:relative;
+    width:95%;
+    left:5%;
+}
+
+.vert{
+	color:green;
+}
+
+#rouge{
+	color:rgb(255, 0, 0);
+}
+
+/*Div qui contient les informations de la demande de référence du jeune*/
+#recapitulatif{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width:90%;
+    left:5%;
+    right:5%;
 }
 
 
@@ -122,23 +155,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-#recapitulatif{
-    position:relative;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width:90%;
-    left:5%;
-    right:5%;
-}
-
-#annonceur{
-    position:relative;
-    width:95%;
-    left:5%;
-}
-
+/*Divs utilisées par le fonction affichedemande() pour l'affichage d'une demande de référence*/
 #tiers1{
     text-align: center;
     height: auto;
@@ -161,14 +178,19 @@ body{
     background-image: linear-gradient(to bottom,#ececec,#cacaca);
 }
 
-.vert{
+#affichage1{
 	color:green;
 }
 
-#rouge{
-	color:rgb(255, 0, 0);
+#affichage2{
+	color:#e42b90;
+}
+#affichage3{
+	color:#e42b90;
 }
 
+
+/*Lien pour retourner sur son tableau de bord*/
 #divlien{
 	position:relative;
 	text-align:center;
@@ -187,14 +209,4 @@ body{
 	text-decoration:underline;
 }
 
-#affichage1{
-	color:green;
-}
-
-#affichage2{
-	color:#e42b90;
-}
-#affichage3{
-	color:#e42b90;
-}
 

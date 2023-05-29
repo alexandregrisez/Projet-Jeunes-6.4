@@ -44,6 +44,10 @@ function veriflogin($email,$mdp){
     return 0;
 }
 
+/*
+Cette fonction prend un email de jeune en paramètre et renvoie le nom du jeune associé à cet email dans le fichier de données.
+Elle renvoie 0 si le nom n'est pas trouvé.
+*/
 function recherchenom($email){
 	// Ouverture du fichier de données et vérification.
     $database=fopen("comptes.txt","r");
@@ -73,6 +77,10 @@ function recherchenom($email){
     return 0;
 }
 
+/*
+Cette fonction prend un email de jeune en paramètre et renvoie le prénom du jeune associé à cet email dans le fichier de données.
+Elle renvoie 0 si le prénom n'est pas trouvé.
+*/
 function rechercheprenom($email){
 	// Ouverture du fichier de données et vérification.
     $database=fopen("comptes.txt","r");
@@ -102,6 +110,10 @@ function rechercheprenom($email){
     return 0;
 }
 
+/*
+Cette fonction prend un email de jeune en paramètre et renvoie la date de naissance du jeune associé à cet email dans le fichier de données.
+Elle renvoie 0 si la date de naissance n'est pas trouvée.
+*/
 function rechercheddn($email){
 	// Ouverture du fichier de données et vérification.
     $database=fopen("comptes.txt","r");
@@ -131,8 +143,10 @@ function rechercheddn($email){
     return 0;
 }
 
+// Valeur initiale de $erreur
 $erreur=0;
 
+// Dans le cas de la déconnexion, on ferme la session.
 if(isset($_GET['deco'])){
 	session_unset();
 	session_destroy();
@@ -159,6 +173,8 @@ else{
     $erreur=1;
 }
 
+// Dans le cas où l'utilisateur a été envoyé ici en essayant d'accéder à une page sans être connecté ou après expiration 
+// de sa session, il faut regarder $_SESSION
 if(isset($_SESSION['erreur'])){
     if($_SESSION['erreur']==2){
         $erreur=2;
@@ -189,10 +205,14 @@ if(isset($_SESSION['erreur'])){
         <h1 id="titreentete1"> JEUNE </h1>
         <p id="titreentete2"> Je donne de la valeur à mon engagement </p>
     </div>
+
+    <!--Div invisible en positionnement relatif pour remplir la place que prendrait normalement l'entête sans 
+    positionnement absolu.-->
+    <!--Cela pour ne pas que le corps et l'entête se chevauchent.-->
     <div id="invisible"> </div>
+
     <!--La zone principale de la page.-->
     <div id="corps">
-
         <!--La zone du formulaire de connexion-->
         <div id="login">
             <h2 id="titre"> Accéder à son espace Jeune </h2>

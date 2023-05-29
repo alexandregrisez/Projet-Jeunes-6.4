@@ -98,7 +98,17 @@ body{
     margin-bottom: 0;
 }
 
-
+/*
+Div invisible en positionnement relatif pour remplir la place que prendrait normalement l'entête sans 
+positionnement absolu.
+Cela pour ne pas que le corps et l'entête se chevauchent.
+*/
+#invisible{
+    z-index:-2;
+    position:relative;
+    height:20%;
+    top:0;
+}
 
 
 #corps{
@@ -109,37 +119,6 @@ body{
     right:5%;
     color:rgb(87, 87, 87);
     font-size: 1.5vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-}
-
-
-#invisible{
-    z-index:-2;
-    position:relative;
-    height:20%;
-    top:0;
-}
-
-
-
-#boutonformulaire{
-    position:relative;
-    width:20%;
-    height:10%;
-    left:40%;
-    right:40%;
-    bottom:20%;
-    font-size: 1.5vw;
-    border: 2px solid #e60080;
-    background-color: rgb(235, 235, 235);
-    color:#e60080;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-}
-
-#boutonformulaire:hover{
-    border: 2px solid #e60080;
-    background-color: rgb(196, 196, 196);
-    color:#e60080;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
@@ -164,25 +143,18 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-#lien{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: #e60080;
-    font-size: 2vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-}
-
-#lien:hover{
-    text-decoration: underline;
-}
-
+/*
+Formulaire de la demande de référence, en trois parties.
+1) Le référent
+2) L'engagement
+3) Les savoir-être
+*/
 #formulaire{
     position:relative;
     height:100%;
     width:100%;
 }
+
 #tiers1{
     text-align: center;
     position:absolute;
@@ -230,17 +202,49 @@ body{
 #txt3{
     color: #e60080;
 }
+
 #selection{
     border:#e42b90 solid 3px;
     background-image: linear-gradient(to bottom,#ffb1e5,#fa6fd7);
 }
 
-
-.vert{
-	color:green;
+#boutonformulaire{
+    position:relative;
+    width:20%;
+    height:10%;
+    left:40%;
+    right:40%;
+    bottom:20%;
+    font-size: 1.5vw;
+    border: 2px solid #e60080;
+    background-color: rgb(235, 235, 235);
+    color:#e60080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-#rouge{
-	color:rgb(255, 0, 0);
+#boutonformulaire:hover{
+    border: 2px solid #e60080;
+    background-color: rgb(196, 196, 196);
+    color:#e60080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
+
+/*
+Lien de retour au tableau de bord
+*/
+#lien{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #e60080;
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#lien:hover{
+    text-decoration: underline;
+}
+
+
 

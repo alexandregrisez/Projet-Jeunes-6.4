@@ -110,7 +110,12 @@
         <h1 id="titreentete1"> JEUNE </h1>
         <p id="titreentete2"> Je donne de la valeur à mon engagement </p>
     </div>
+
+    <!--Div invisible en positionnement relatif pour remplir la place que prendrait normalement l'entête sans 
+    positionnement absolu.-->
+    <!--Cela pour ne pas que le corps et l'entête se chevauchent.-->
     <div id="invisible"> </div> 
+
     <!--La zone principale de la page.-->
     <div id="corps">
 

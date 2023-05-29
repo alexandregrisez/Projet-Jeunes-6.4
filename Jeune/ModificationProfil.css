@@ -98,16 +98,16 @@ body{
     margin-bottom: 0;
 }
 
-/*La phrase d'accroche de l'entête.*/
-#titreentete2{
-    text-align: right;
-    margin-bottom: 1vmin;
-    font-size: 2.6vw;
-    position:absolute;
-    right: 0%;
-    left:40%;
-    bottom:0%;
-    margin-right: 2vmin;
+/*
+Div invisible en positionnement relatif pour remplir la place que prendrait normalement l'entête sans 
+positionnement absolu.
+Cela pour ne pas que le corps et l'entête se chevauchent.
+*/
+#invisible{
+    z-index:-2;
+    position:relative;
+    height:20%;
+    top:0;
 }
 
 
@@ -121,14 +121,27 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-
-#invisible{
-    z-index:-2;
-    position:relative;
-    height:20%;
-    top:0;
+#fond{
+    z-index: -1;
+    opacity: 60%;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
 }
 
+#titre{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #e60080;
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
 
 
 #boutonformulaire{
@@ -146,25 +159,12 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-#fond{
-    z-index: -1;
-    opacity: 60%;
-    position: absolute;
-    width: 70%;
-    height: 80%;
-    top: 10%;
-    bottom: 10%;
-    right: 15%;
-    left: 15%;
+.vert{
+	color:green;
 }
-#titre{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    text-decoration: underline;
-    color: #e60080;
-    font-size: 2vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+
+#rouge{
+	color:rgb(255, 0, 0);
 }
 
 #lien{
@@ -184,13 +184,7 @@ body{
 
 
 
-.vert{
-	color:green;
-}
 
-#rouge{
-	color:rgb(255, 0, 0);
-}
 
 
 
