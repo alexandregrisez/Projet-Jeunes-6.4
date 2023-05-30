@@ -202,6 +202,36 @@ function envoimail($id){
     }
 }
 
+
+/*
+Cette fonction vérifie si la demande d'id $id est bien associée au compte jeune d'adresse $email. 
+*/
+function verificationGET($id,$email){
+	$buffer="123";
+    $tab=[];
+
+    // On parcourt le fichier de la même manière que précédemment dans la fonction mail
+    $database=fopen("demandes.txt","r+");
+    if(!$database){
+        return 1;
+    }
+
+    while($buffer!=false){
+        $buffer=fgets($database);
+        if($buffer!=false){
+            $tab=explode(",",$buffer);
+            if(isset($tab[0])){
+				// Il faut que l'email + l'id correspondent tout les deux
+                if($id==$tab[1] && $email==$tab[0]){
+                    return 0;
+                }
+            }
+        }
+    }
+    fclose($database);
+    return 1;
+}
+
 /*
 Cette fonction prend un nombre en paramètre et renvoie la qualité associée (str)
 (Utilsée pour gérer la sélection des savoir-être)
@@ -486,14 +516,19 @@ if($cas==1){
                                    $_POST['domaine'],$_POST['date1'],$_POST['date2'],$qualites[0],$qualites[1],
                                    $qualites[2],$qualites[3],$_SESSION['email']);
         if($erreur==0){
-             $erreur=envoimail($id);
+             //$erreur=envoimail($id);
         }
     }
 }
 
-// Dans le cas 2, pas de traitement particulier, on affichera juste la demande.
+// Dans le cas 2, il faut juste vérifier si l'utilisateur n'essaye pas d'accéder à une demande qui n'est pas une des siennes.
 if($cas==2){
     $erreur=999;
+	if(verificationGET($_GET['id'],$_SESSION['email'])!=0){
+		session_unset();
+		session_destroy();
+		header('Location: Connexion.html');
+	}
 }
 
 ?>

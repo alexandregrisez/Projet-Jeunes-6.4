@@ -155,32 +155,32 @@
             switch($erreur){
                 case 0:
                     echo "<p class='vert'>Votre compte a bien été créé.</p>";
-                    echo "<p><a href='Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
+                    echo "<p><a href='../Visiteur/Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
                     break;
                 case 1:
                     echo "<p class='rouge'> Un problème est survenu lors de la création du compte. </p>";
                     echo "<p class='rouge'> Un symbole non-autorisé a été utilisé. Veuillez réessayer. </p>";
-                    echo "<p><a href='Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
+                    echo "<p><a href='../Visiteur/Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
                     break;
                 case 2:
                     echo "<p class='rouge'> Un problème est survenu lors de la création du compte. </p>";
                     echo "<p class='rouge'> L'écriture dans la base de données a échoué. Veuillez réessayer. </p>";
-                    echo "<p><a href='Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
+                    echo "<p><a href='../Visiteur/Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
                     break;
                 case 3:
                     echo "<p class='rouge'> Un problème est survenu lors de la création du compte. </p>";
                     echo "<p class='rouge'> Tous les champs sont obligatoires. Veuillez réessayer. </p>";
-                    echo "<p><a href='Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
+                    echo "<p><a href='../Visiteur/Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
                     break;
                 case 4:
                     echo "<p class='rouge'> Un problème est survenu lors de la création du compte. </p>";
                     echo "<p class='rouge'> Un compte utilisant cette adresse e-mail existe déjà. </p>";
-                    echo "<p><a href='Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
+                    echo "<p><a href='../Visiteur/Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
                     break;
                 case 5:
                     echo "<p class='rouge'> Un problème est survenu lors de la création du compte. </p>";
                     echo "<p class='rouge'> L'accès à la base de données est impossible. Veuillez réessayer plus tard. </p>";
-                    echo "<p><a href='Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
+                    echo "<p><a href='../Visiteur/Presentation.html' id='retouraccueil'> Retour à l'accueil </a></p>";
                     break;
             }
         ?>

@@ -261,7 +261,7 @@ if(isset($_POST['email'])){
 
     // Si pas d'erreur, envoi du mail au consultant.
     if($erreur==-1){
-        $erreur=envoimail($_POST['email'],$liste);
+        //$erreur=envoimail($_POST['email'],$liste);
     }
 	
 }
@@ -304,10 +304,13 @@ if(isset($_POST['email'])){
 						break;
 					case 5:
 						echo "<p class='rouge'>Erreur : Vous n'avez sélectionné aucune référence.</p>";
+						break;
 					case 100:
 						echo "<p class='rouge'>Erreur : Nous n'avons pas pu envoyer vos références.</p>";
+						break;
 					case 105:
 						echo "<p class='rouge'>Erreur : Nous n'avons pas pu envoyer vos références.</p>";
+						break;
 					default:
 						echo "";
 						break;

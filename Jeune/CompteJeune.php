@@ -27,7 +27,7 @@ function recherche_demandes($email){
                    $TAB[$i]=$tab;
 				   $i=$i+1;
                 }
-            }   
+            }
         }
     }
     
@@ -49,8 +49,6 @@ if(isset($_SESSION['derniereconnexion']) && time() - $_SESSION['derniereconnexio
 		$_SESSION['erreur']=3;
 		header('Location: Connexion.php');
 }
-
-
 ?>
 <!DOCTYPE html>
 <html>

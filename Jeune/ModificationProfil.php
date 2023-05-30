@@ -220,11 +220,13 @@ if(isset($_POST['nom'])){
         <!-- Div qui sert au PHP à relayer des messages à l'utilisateur-->
         <div id=annonceur>
             <?php
-                // En fonction de la valeur de $erreur/$erreu2, un message différent est envoyé.
+                // En fonction de la valeur de $erreur/$erreur2, un message différent est envoyé.
                 // Il vaut mieux que l'utilisateur se reconnecte après une modification de son compte.
                 if($erreur==0 && $erreur2==0){
                     echo "<p class='vert'> Votre profil a bien été modifié.</p>";
                     echo "<p class='vert'> Vous allez devoir vous reconnecter.</p>";
+					session_unset();
+                	session_destroy();
                 }
                 else if($erreur==-1){
                     echo "";
@@ -238,8 +240,6 @@ if(isset($_POST['nom'])){
                 else{
                     echo "<p id='rouge'> Une erreur est survenue, veuillez réessayer.</p>";
                 }
-                session_unset();
-                session_destroy();
             ?>
         </div>
 
