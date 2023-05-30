@@ -54,6 +54,7 @@ Les modules Référent et Consultant ne sont accessibles que par le suivi d'un l
 + MODULE CONSULTANT  
   - ResumeConsultant.php
   - ResumeConsultant.css
++ PHPMailer
 
 Plus de détails sur l'architecture du projet sont à trouver dans le rapport joint.
 
