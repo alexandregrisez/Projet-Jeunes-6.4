@@ -1,24 +1,26 @@
 <?php
 function rechercheid($id){ //recherche l'id dans toutes les references et envoie la ref correspondante
-    $database=fopen("demandes.txt","r+");
+    if(!(file_exists("../Jeune/demandes.txt"))){
+		return 1;
+	}
+    $database=fopen("../Jeune/demandes.txt","r+");
     $buffer="123";
     $tab=[];
     while($buffer!=false){
         $buffer=fgets($database);
         if($buffer!=false){
             $tab=explode(",",$buffer);
-            if(isset($tab[0])){
+            if(isset($tab[1])){
                 if($id==$tab[1]){
                     fclose($database);
                     return $tab;
                 }
             }
-            //$erreur=1;
         }
     }
     echo $erreur;
     fclose($database);
-    //return 1;
+    return 1;
 
 }
 ?>
@@ -52,22 +54,31 @@ function rechercheid($id){ //recherche l'id dans toutes les references et envoie
             <?php
                 $erreur=0;
                 $tab=[];
-                $list_id="1,4";
+                $list_id="100,4";
                 $list_id=explode(",",$list_id);
+                echo "IDs : {$list_id[0]},{$list_id[1]} <br> <br>";
                 if($list_id==false){
-                    $erreur=1;
+                    $erreur=300;
                     echo $erreur;
                 }
                 else{
+                    $erreur=301;
                     echo $erreur;
                 }
-                echo  count($list_id);
+                echo "<br> <br>";
                 //$list_id=explode(",",$_GET["list_id"]);
-                for($i=0;count($list_id);$i++){
-                    echo count($list_id);
-                    $tab=rechercheid($list_id[i]); //cette ligne pose pb
-                    echo count($list_id);
-                    echo $tab; 
+                for($i=0;$i<count($list_id);$i++){
+                    $tab=rechercheid($list_id[$i]); //cette ligne pose pb
+                    if($tab==1){
+                        echo "L'id {$list_id[$i]} n'a pas de demande associée";
+                    }
+                    else{
+                        for($j=0;$j <12;$j++){
+                            echo $tab[$j]."<br>";
+                        }
+                    }
+                    
+                     
                     echo  "<div> 
                     <p id=jeune>Voici les informations du Jeune et sa demande de Référence\n
                     Nom:".$tab[11]."\nPrenom:".$tab[12]." \nDate de naissance:".$tab[13]."\nemail:".$tab[0]."\nDescription engagement:".$tab[3]."\nDate de début:".$tab[4]."\nDate de fin:".$tab[5]."\nDomaine d'engagement:".$tab[6]."\n</p>
