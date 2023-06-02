@@ -144,7 +144,7 @@ function recherche_ref($id){
 <html>
 <head>
     <title> Accueil - Jeunes 6.4</title>
-    <!--<link rel="stylesheet" href="referent.css">-->
+    <link rel="stylesheet" href="referent.css">
     <!--Les attributs name et content permettent ici d'utiliser les unités dynamiques vw,vh,vmin... dans le CSS-->
     <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -158,60 +158,55 @@ function recherche_ref($id){
         <p id="titreentete2"> Je confirme la valeur de ton engagement </p>
     </div>
 
-      <!--Le menu est une bande divisée en 4 parties égales (les "quarts" ci-dessous) qui contiennent chacune un lien.-->
-    <div id="menu">
-        <div id="quart1" > <a href="Jeune.html" id="lien1"> JEUNE </a> </div>
-        <div id="quart2" > <a href="Referent.html" id="lien2"> RÉFÉRENT </a></div>
-        <div id="quart3" > <a href="Consultant.html" id="lien3"> CONSULTANT </a></div>
-        <div id="quart4" > <a href="Partenaires.html" id="lien4"> PARTENAIRES </a> </div>
-    </div>
-
     <!--La zone principale de la page.-->
     <div id="corps">
-
         <!--Le fond de la page est la version "référent" du logo de JEUNES 6.4-->
         <img id="fond" src="Images/logo3.JPG">
-        
-        <div id="texte">
-            <p>Confirmez cette expérience et ce que vous avez pu constater au contact de ce jeune</p>
-        </div>
-    </div>
+        <p>Confirmez cette expérience et ce que vous avez pu constater au contact de ce jeune</p>
 
-    <div id=affichage_php>
-        <?php
-        $demande_reference=recherche_ref(2);
-        $info_jeune=info_jeune(2);
-		?>
-        <div id=infos_jeune>
-			<?php
-            echo "<p>Voici les infos du Jeune qui vous demande des références\n
-            nom:$info_jeune[0]\n
-            prenom:$info_jeune[1]\n
-            date de naissance:$info_jeune[2]\n
-            mail:$demande_reference[0]\n
-            </p>";
-			?>
+        <div id=comm>
+            <p>COMMENTAIRES</p>
         </div>
-        <div id=demande_reference>
-			<?php
-            echo "<p>Voici la demande de référence\n
-            description: $demande_reference[3]\n
-            date début:$demande_reference[4]\n
-            date fin:$demande_reference[5]\n
-            domaine engagement:$demande_reference[6]\n 
-            </p>";
-			?>
+
+        <div id=savoirs>
+            <p>SAVOIRS-ETRES</p>
         </div>
-        <div id=infos_referent>
-			<?php
-            echo "<p>Voici vos informations personnelles\n
-            nom:$demande_reference[7]\n
-            prenom:$demande_reference[8]\n
-            mail:$demande_reference[9]\n
-            metier:$demande_reference[10]\n
-            </p>";
-			?>
-        </div>
+
+        <a href=modifref.php><button type="button" id="bouton1">Voir vos informations personnelles</button>
+
+        <div id=affichage_php>
+            <?php
+            $demande_reference=recherche_ref(2);
+            $info_jeune=info_jeune(2);
+		    ?>
+            <div id=infos>
+			    <?php
+                echo "<p>
+                NOM:    $info_jeune[0]<br>
+                PRENOM: $info_jeune[1]<br>
+                DATE DE NAISSANCE:  $info_jeune[2]<br>
+                MAIL:   $demande_reference[0]<br>
+                <br>
+                DESCRIPTION:    $demande_reference[3]<br>
+                DATE DE DEBUT:  $demande_reference[4]<br>
+                DATE DE FIN:    $demande_reference[5]<br>
+                DOMAINE D'ENGAGEMENT:   $demande_reference[6]<br>
+                </p>";
+			    ?>
+            </div>
+            <div id=infos_referent>
+			    <!--<?php
+                echo "<p>Voici vos informations personnelles<br>
+                <br>
+                NOM:$demande_reference[7]<br>
+                PRENOM:$demande_reference[8]<br>
+                MAIL:$demande_reference[9]<br>
+                METIER:$demande_reference[10]<br>
+                </p>"
+			    ?>
+            </div>
+        </div>    
     </div>
+</div>
 </body>
 </html>
