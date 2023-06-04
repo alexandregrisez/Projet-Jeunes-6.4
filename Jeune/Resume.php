@@ -220,7 +220,7 @@ function verificationGET($id,$email){
         $buffer=fgets($database);
         if($buffer!=false){
             $tab=explode(",",$buffer);
-            if(isset($tab[0])){
+            if(isset($tab[1])){
 				// Il faut que l'email + l'id correspondent tout les deux
                 if($id==$tab[1] && $email==$tab[0]){
                     return 0;

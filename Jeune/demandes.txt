@@ -36,3 +36,15 @@ e@gmail.com,120,1,ee,2023-05-02,2023-05-03,e,ee,ee,ee@e,ee,Enthousiasme;Rigueur
 nom@gmail.com,121,0,descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription,2023-05-01,2023-05-02,x,ABC,DEF,a@gmail.com,met,Enthousiasme;Communication;Bienveillance;Travail en équipe
 nom@gmail.com,122,0,eeee,2023-05-01,2023-05-11,ee,ee,ee,e@e,ee,Enthousiasme;Rigueur;Rapidité;Travail en équipe
 nom@gmail.com,123,0,test,2023-05-15,2023-05-16,test,test,test,test@t,test,Enthousiasme
+jeandupond@gmail.com,124,0,J'ai pu apprendre à tenir un bar et à répondre rapidement aux demandes des clients. ,2023-03-07,2023-06-07,Commerce,Moissat,Matt,matt.moissat@outlook.fr,Gérant d'une brasserie,Communication;Organisation;Rapidité
+jeandupond@gmail.com,125,1,J'ai fait un mois de stage avec mon tuteur, Caroline.,2015-11-30,2016-01-01,Médecine,Houx,Caroline,cabinetcss@gmail.com,Kinésithérapeute
+jeandupond@gmail.com,126,1,J'ai fait un mois de stage avec mon tuteur, Caroline.,2015-11-30,2016-01-01,Médecine,Houx,Caroline,cabinetcss@gmail.com,Kinésithérapeute
+jeandupond@gmail.com,127,1,J'ai pu apprendre à tenir un bar et à répondre rapidement aux demandes des clients. ,2023-03-07,2023-06-07,Commerce,Moissat,Matt,matt.moissat@outlook.fr,Gérant d'une brasserie,Communication;Organisation;Rapidité
+
+jeandupond@gmail.com,128,0,J'ai fait un mois de stage supervisé par Mme Houx.,2015-11-30,2016-01-01,Médecine,Houx,Caroline,cabinetcss@gmail.com,Kinésithérapeute,Rigueur;Réactivité;Curiosité
+jeandupont@gmail.com,136,0,J'ai pu apprendre à tenir un bar et à répondre rapidement aux demandes des clients. ,2023-03-07,2023-06-07,Commerce,Moissat,Matt,matt.moissat@outlook.fr,Gérant d'une brasserie,Communication;Organisation;Rapidité,Il s'est très bien débrouillé ! 
+jeandupond@gmail.com,125,1,J'ai fait un mois de stage avec mon tuteur, Caroline.,2015-11-30,2016-01-01,Médecine,Houx,Caroline,cabinetcss@gmail.com,Kinésithérapeute
+jeandupond@gmail.com,126,1,J'ai fait un mois de stage avec mon tuteur, Caroline.,2015-11-30,2016-01-01,Médecine,Houx,Caroline,cabinetcss@gmail.com,Kinésithérapeute
+jeandupond@gmail.com,127,1,J'ai pu apprendre à tenir un bar et à répondre rapidement aux demandes des clients. ,2023-03-07,2023-06-07,Commerce,Moissat,Matt,matt.moissat@outlook.fr,Gérant d'une brasserie,Communication;Organisation;Rapidité
+
+jeandupont@gmail.com,142,0,J'ai fait un mois de stage supervisé par Mme Houx.,2015-11-30,2016-01-01,Médecine,Houx,Caroline,cabinetcss@gmail.com,Kinésithérapeute,Rigueur;Réactivité;Curiosité,Un stagiaire studieux et agréable.

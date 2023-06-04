@@ -90,7 +90,7 @@ if(isset($_SESSION['derniereconnexion']) && time() - $_SESSION['derniereconnexio
 				<a class="lien" href="EnvoiConsultant.php">Envoyer ses références </a>
 			</div>
 			<div id=inclusionCV class="bouton">
-				<a class="lien" href="DemandeDeReference.php">Inclure ses références dans son CV </a>
+				<a class="lien" href="GenerationPDF.php">Inclure ses références dans son CV </a>
 			</div>
 		</div>
 	</div>
