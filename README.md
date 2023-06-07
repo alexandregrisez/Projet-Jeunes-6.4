@@ -4,7 +4,7 @@
 
 Le projet Jeunes 6.4 est un dispositif de valorisation de l'engagement des jeunes en Pyrénées-Atlantiques soutenu par l'État, le Conseil Général, le Conseil Régional, les CAF Béarn Soule et Pays Basque, la MSA, la CPAM.  
 
-Jeunes 6.4 est un site web créé avec HTML, CSS, Javascript, PHP.  
+Jeunes 6.4 est un site web créé avec HTML, CSS, PHP.  
 
 Plus de détails sur l'architecture du projet sont à trouver dans le rapport joint.
 
