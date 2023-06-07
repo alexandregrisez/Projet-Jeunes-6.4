@@ -280,7 +280,7 @@ function creationid(){
     // On parcourt le fichier de la même manière que précédemment dans la fonction mail
     $database=fopen("demandes.txt","r+");
     if(!$database){
-        return 1;
+        return $id;
     }
 
     while($buffer!=false){

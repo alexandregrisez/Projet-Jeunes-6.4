@@ -1,0 +1,122 @@
+html{
+    height:100%;
+    width: 100%;
+}
+
+
+body{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+.nomargin{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/*Une div qui correspond à l'entête des pages du site*/
+#entete {
+    background-image: radial-gradient(at 20% 100%, rgb(255, 255, 255),rgb(189, 187, 187));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    height: 20%;
+    border-bottom:solid 5px #1096d5;
+}
+
+#imageentete{
+    float: left;
+    position: absolute;
+    margin-left: 0%;
+    margin-right: 80%;
+    width: 20%;
+    height: 90%;
+}
+
+/*Le grand titre de l'entête*/
+#titreentete1{
+    color: #1096d5;
+    font-size: 6.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    position:absolute;
+    width: 70%;
+    height:50%;
+    bottom:47%;
+    top:3%;
+    left:28%;
+    right:2%;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#invisible{
+    z-index:-2;
+    position:relative;
+    height:20%;
+    top:0;
+}
+
+#corps{
+    margin-left:2%;
+    margin-right:2%;
+    position: relative;
+    color:rgb(87, 87, 87);
+    font-size: 1.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#fond{
+    z-index: -1;
+    opacity: 60%;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
+}
+
+#infosjeune{
+    text-align: center;
+    border:#1096d5 solid 2px;
+    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(199, 223, 255));
+}
+
+#references{
+    font-size: 1.5vw;
+    position:relative;
+    margin-left:10px;
+}
+.reference{
+    text-align: center;
+    border: 2px solid #1096d5;
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(199, 223, 255));
+    overflow-wrap: break-word;
+    position:relative;
+}
+
+
+.souligne{
+    text-decoration:underline;
+}
+.rose{
+    color:#e60080;
+}
+
+.bleu{
+    text-align: center;
+    color:#1096d5;
+}
