@@ -323,22 +323,22 @@ function demandedereference($id,$nom,$prenom,$metier,$email1,$desc,$domaine,$dat
     // On détermine le nombre de savoir-être sélectionnés en regardant à partir duquel  $qual/i/ vaut ""
     // Erreur si l'écriture ne fonctionne pas.
     if($qual2==""){
-        if(fwrite($database,$email2.",".$id.",1,".$desc.",".$date1.",".$date2.",".$domaine.",".$nom.",".$prenom.",".$email1.",".$metier.",".$qual1."\n")==false){
+        if(fwrite($database,$email2.",".$id.",1,".$desc.",".$date1.",".$date2.",".$domaine.",".$nom.",".$prenom.",".$email1.",".$metier.",".$qual1.",\n")==false){
             return 1;
         }
     }
     else if($qual3==""){
-        if(fwrite($database,$email2.",".$id.",1,".$desc.",".$date1.",".$date2.",".$domaine.",".$nom.",".$prenom.",".$email1.",".$metier.",".$qual1.";".$qual2."\n")==false){
+        if(fwrite($database,$email2.",".$id.",1,".$desc.",".$date1.",".$date2.",".$domaine.",".$nom.",".$prenom.",".$email1.",".$metier.",".$qual1.";".$qual2.",\n")==false){
             return 1;
         }
     }
     else if($qual4==""){
-        if(fwrite($database,$email2.",".$id.",1,".$desc.",".$date1.",".$date2.",".$domaine.",".$nom.",".$prenom.",".$email1.",".$metier.",".$qual1.";".$qual2.";".$qual3."\n")==false){
+        if(fwrite($database,$email2.",".$id.",1,".$desc.",".$date1.",".$date2.",".$domaine.",".$nom.",".$prenom.",".$email1.",".$metier.",".$qual1.";".$qual2.";".$qual3.",\n")==false){
             return 1;
         }
     }
     else{
-        if(fwrite($database,$email2.",".$id.",1,".$desc.",".$date1.",".$date2.",".$domaine.",".$nom.",".$prenom.",".$email1.",".$metier.",".$qual1.";".$qual2.";".$qual3.";".$qual4."\n")==false){
+        if(fwrite($database,$email2.",".$id.",1,".$desc.",".$date1.",".$date2.",".$domaine.",".$nom.",".$prenom.",".$email1.",".$metier.",".$qual1.";".$qual2.";".$qual3.";".$qual4.",\n")==false){
             return 1;
         }
     } 
@@ -378,35 +378,42 @@ function affichedemande($id){
                     $emailref=$tab[9];
                     $metier=$tab[10];
                     $qualites=explode(";",$tab[11]);
+                    $comm=$tab[12];
                     break;
                 }
             }
         }
     }
     fclose($database);
-    
+
     // Affichage de la demande de référence sous la forme d'une div
     // La div comporte trois parties, une pour les informations du référent, une pour l'engagement du jeune, une pour ses 
     // savoir-être
     echo "<div id='demande'>
               <p> Vous (".$emailjeune.") avez émis la demande de référence n°".$id." :</p>
               <div id='tiers1'>
-                  <p id='affichage1'> Votre référent : </p>
-                  <p> Nom : ".$nom."</p>
-                  <p> Prénom : ".$prenom."</p>
-                  <p> E-mail : ".$emailref."</p>
-                  <p> Métier : ".$metier."</p>
+                  <p id='affichage1'> <b class='souligne'>Votre référent</b> : </p>
+                  <p><b class='souligne'> Nom</b> : ".$nom."</p>
+                  <p><b class='souligne'> Prénom</b> : ".$prenom."</p>
+                  <p><b class='souligne'> E-mail</b> : ".$emailref."</p>
+                  <p><b class='souligne'> Métier</b> : ".$metier."</p>
               </div>
               </br>
               <div id='tiers2'>
-                  <p id='affichage2'> Votre engagement : </p>
-                  <p> Domaine : ".$domaine."</p>
-                  <p> Du ".$date1." au ".$date2." </p>
-                  <p> Description : ".$desc."</p>
+                  <p id='affichage2'> <b class='souligne'>Votre engagement</b> : </p>
+                  <p> <b class='souligne'>Domaine</b> : ".$domaine."</p>
+                  <p><b class='souligne'> Du</b> ".$date1." <b class='souligne'>au</b> ".$date2." </p>
+                  <p><b class='souligne'> Description</b> : ".$desc."</p>";
+
+    if($comm!="\n"){
+        echo "<p><b class='souligne'> Commentaire du référent</b> : ".$comm."</p>";
+    }
+
+    echo "
               </div>
               </br>
               <div id='tiers3'>
-                  <p id='affichage3'> Vos qualités démontrées : </p>";
+                  <p id='affichage3'><b class='souligne'> Vos qualités démontrées</b> : </p>";
     // Pour les savoir-être, on doit faire au cas par cas selon le nombre de qualités que le jeune a sélectionné.
     // Cela aurait pu être mis sous la forme d'une boucle
     $nb=count($qualites);

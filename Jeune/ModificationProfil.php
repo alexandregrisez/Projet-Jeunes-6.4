@@ -112,7 +112,7 @@ function modifdemandes($email,$nvemail){
             $tab=explode(",",$buffer);
             if(isset($tab[0])){
                 if($email==$tab[0]){
-                    if(fwrite($temp,$nvemail.",".$tab[1].",".$tab[2].",".$tab[3].",".$tab[4].",".$tab[5].",".$tab[6].",".$tab[7].",".$tab[8].",".$tab[9].",".$tab[10].",".$tab[11]."\n")==false){
+                    if(fwrite($temp,$nvemail.",".$tab[1].",".$tab[2].",".$tab[3].",".$tab[4].",".$tab[5].",".$tab[6].",".$tab[7].",".$tab[8].",".$tab[9].",".$tab[10].",".$tab[11].",".$tab[12]."\n")==false){
                         $ok=1;
                     }
                 }

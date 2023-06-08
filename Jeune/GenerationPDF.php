@@ -3,7 +3,10 @@ require_once '../dompdf/autoload.inc.php';
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
-
+/*
+Cette fonction prend un id de demande de référence et renvoie l'email du jeune associé dans le fichier de données.
+Elle renvoie 2 si l'email n'est pas trouvé.
+*/
 function rechercheemail($id){
     $database=fopen("demandes.txt","r+");
 	if(!$database){
@@ -134,6 +137,10 @@ function rechercheddn($email){
     return 0;
 }
 
+/*
+Cette fonction prend un id de demande de référence et renvoie toute la demande associée dans le fichier de données.
+Elle renvoie 2 si l'email n'est pas trouvé.
+*/
 function recherchedemande($id){
     $database=fopen("demandes.txt","r+");
 	if(!$database){
@@ -162,7 +169,10 @@ function recherchedemande($id){
 	return 2;
 }
 
-
+/*
+Cette fonction prend en paramètre une liste d'IDs séparés par des virgules et finissant par 'fin' et génère un document
+contenant les demandes de références correspondantes ainsi que le profil du jeune associé.
+*/
 // A besoin de l'extension GD
 function pdf($liste){
 	$ids=explode(',',$liste);
@@ -181,6 +191,7 @@ function pdf($liste){
 		$i++;
 	}
 
+	// Ces lignes rendent l'affichage d'une image plus simple.
 	$options=new Options();
 	$options->set('isRemoteEnabled',true);
 	$dompdf=new Dompdf($options);
@@ -282,6 +293,8 @@ function pdf($liste){
      </div>
 	 </body>
 	 </html>";
+
+	// Génération du PDF
 	$dompdf->loadHtml($HTML);
 	$dompdf->render();
 	$dompdf->stream();

@@ -1,5 +1,5 @@
 /*
-CSS DE LA PAGE DE CONNEXION
+CSS DE LA PAGE CONNEXION DU MODULE JEUNE
 */
 
 /*
@@ -10,9 +10,6 @@ Remarques générales :
 ce à quoi ils correspondent.
 - Il a été choisi d'utiliser les IDs plutôt que les classes pour réduire les dépendances entre les styles des 
 éléments.
-- Les positionnements sont presque tous en absolus. Cela a permis d'arranger très précisément le design de la page
-pour se conformer mieux à ce qui est proposé par le client. On a vu qu'il n'était pas d'usage de faire ça de nos jours
-mais c'est ce qui a le mieux fonctionné et permis d'avancer rapidement.
 - Pour que les pages puissent s'adapter un petit peu aux utilisateurs, les unités vh, vw, etc. ont été utilisées
 pour que le site convienne à tout type "classique" de fenêtre. Le site est cependant mieux optimisé pour les formats 
 paysages. Il n'est pas esthétique mais est utilisable en format portrait.
@@ -24,9 +21,6 @@ simples en associant à chaque HTML son CSS, quitte à devoir copier-coller des 
 chaque fichier.
 - Comme beaucoup du CSS a été trouvé à force d'essai-erreur et que les styles sont très similaires les uns avec
 les autres, il y a peu de commentaires.
-*/
-
-/*
 - La fonction radial-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au centre du 
 cercle qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
 - La fonction linear-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au sens du

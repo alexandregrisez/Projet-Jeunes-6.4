@@ -1,3 +1,35 @@
+/*
+CSS DE LA PAGE DU MODULE CONSULTANT
+*/
+
+/*
+Remarques générales :
+
+- Les éléments sont ordonnés (grossièrement) dans leur ordre d'apparition dans la page HTML.
+- Les noms des IDs ont été choisis pour être les plus explicites possibles, quand ce n'est pas le cas est précisé
+ce à quoi ils correspondent.
+- Il a été choisi d'utiliser les IDs plutôt que les classes pour réduire les dépendances entre les styles des 
+éléments.
+- Pour que les pages puissent s'adapter un petit peu aux utilisateurs, les unités vh, vw, etc. ont été utilisées
+pour que le site convienne à tout type "classique" de fenêtre. Le site est cependant mieux optimisé pour les formats 
+paysages. Il n'est pas esthétique mais est utilisable en format portrait.
+- La police utilisée par le client dans les documents n'est pas celle que nous utilisons car nous ne l'avons pas 
+trouvée, mais on a choisi une police qui puisse conserver l'esthétique demandée.
+- Au départ, il était prévu d'utiliser un fichier CSS global pour tout le site -- pour réduire la quantité de fichiers -- 
+mais on s'est aperçu assez vite que les IDs étaient plus clairs et que les recherches dans les fichiers étaient plus 
+simples en associant à chaque HTML son CSS, quitte à devoir copier-coller des styles comme celui de l'entête dans 
+chaque fichier.
+- Comme beaucoup du CSS a été trouvé à force d'essai-erreur et que les styles sont très similaires les uns avec
+les autres, il y a peu de commentaires.
+- La fonction radial-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au centre du 
+cercle qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- La fonction linear-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au sens du
+dégradé qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- Pour le fond des pages web, un z-index de -1 permet de faire passer tout autre élément au premier plan devant le fond.
+L'opacité permet de rendre les couleurs de l'image moins aggressives.
+- La sous-classe hover est utilisée quand il faut qu'un élément change de style au passage de la souris.
+*/
+
 html{
     height:100%;
     width: 100%;
@@ -61,6 +93,9 @@ body{
     margin-bottom: 0;
 }
 
+/*
+Div invisible en positionnement relatif pour prendre de la place
+*/
 #invisible{
     z-index:-2;
     position:relative;
@@ -77,17 +112,6 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-#fond{
-    z-index: -1;
-    opacity: 60%;
-    position: absolute;
-    width: 70%;
-    height: 80%;
-    top: 10%;
-    bottom: 10%;
-    right: 15%;
-    left: 15%;
-}
 
 #infosjeune{
     text-align: center;
@@ -95,11 +119,18 @@ body{
     background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(199, 223, 255));
 }
 
+/*
+Div qui contient une ou plusieurs demandes de références résumées.
+*/
 #references{
     font-size: 1.5vw;
     position:relative;
     margin-left:10px;
 }
+
+/*
+Div qui contient une demande de référence résumée.
+*/
 .reference{
     text-align: center;
     border: 2px solid #1096d5;
@@ -114,6 +145,10 @@ body{
 }
 .rose{
     color:#e60080;
+}
+
+.rouge{
+    color:red;
 }
 
 .bleu{

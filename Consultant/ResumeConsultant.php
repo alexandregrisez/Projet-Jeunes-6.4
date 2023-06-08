@@ -1,5 +1,8 @@
 <?php
-
+/*
+Cette fonction prend un id de demande de référence et renvoie l'email du jeune associé dans le fichier de données.
+Elle renvoie 2 si l'email n'est pas trouvé.
+*/
 function rechercheemail($id){
     $database=fopen("../Jeune/demandes.txt","r+");
 	if(!$database){
@@ -130,6 +133,10 @@ function rechercheddn($email){
     return 0;
 }
 
+/*
+Cette fonction prend un id de demande de référence et renvoie toute la demande associée dans le fichier de données.
+Elle renvoie 2 si l'email n'est pas trouvé.
+*/
 function recherchedemande($id){
     $database=fopen("../Jeune/demandes.txt","r+");
 	if(!$database){
@@ -158,11 +165,25 @@ function recherchedemande($id){
 	return 2;
 }
 
+/*
+Cette fonction prend en paramètre une liste d'IDs séparés par des virgules et finissant par 'fin' et affiche toutes les 
+demandes de références correspondantes ainsi que le profil du jeune associé.
+En cas de problème, elle renvoie 2.
+*/
 function references($liste){
+
+    // On vérifie que la liste se termine par 'fin'
+    if(substr($liste,-4)!=",fin"){
+        return 2;
+    }
 	$ids=explode(',',$liste);
 
 	// Obtention des informations personnelles du jeune
 	$emailjeune=rechercheemail($ids[0]);
+    // Cas où l'un des ID correspond à une demande qui n'existe pas
+    if($emailjeune==2){
+        return 2;
+    }
 	$nomjeune=recherchenom($emailjeune);
 	$prenomjeune=rechercheprenom($emailjeune);
 	$ddnjeune=rechercheddn($emailjeune);
@@ -207,6 +228,7 @@ function references($liste){
 		</div>
 	 </body>
 	 </html>";
+    // Affichage
 	echo $HTML;
 	return 0;
 }
@@ -216,8 +238,18 @@ function references($liste){
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Votre Espace - Jeunes 6.4</title>
-    <link rel="stylesheet" href="../ResumeConsultant.css">
+    <title> Consultant - Jeunes 6.4</title>
+
+    <!--Selon si le paramètre GET est défini ou non, le chemin d'accès aux fichiers peut changer-->
+    <?php
+    if(isset($_GET['list_id'])){
+        echo "<link rel='stylesheet' href='../ResumeConsultant.css'>";
+    }
+    else{
+        echo "<link rel='stylesheet' href='ResumeConsultant.css'>";
+    }
+    ?>
+    
     <!--Les attributs name et content permettent ici d'utiliser les unités dynamiques vw,vh,vmin... dans le CSS-->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
@@ -245,12 +277,14 @@ function references($liste){
             <p> Toutes les informations sont affichées ci-dessous !</p>
         </div>
 		<?php
-            $liste=$_GET['list_id'];
-            if(isset($liste)){
-                references($liste);
+            if(isset($_GET['list_id'])){
+                $liste=$_GET['list_id'];
+                if(references($liste)==2){
+                    echo "<p class='rouge'> Une erreur est survenue. Veuillez réessayer.</p>";
+                }
             }
             else{
-                echo "<p> Une erreur est survenue. Veuillez réessayer.</p>";
+                echo "<p class='rouge'> Une erreur est survenue. Veuillez réessayer.</p>";
             }
         ?>
 	</div>
