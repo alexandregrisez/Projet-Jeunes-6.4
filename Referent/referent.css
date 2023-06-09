@@ -1,0 +1,184 @@
+/*
+CSS DE LA PAGE JEUNE DU MODULE VISITEUR
+*/
+
+/*
+Remarques générales :
+
+- Les éléments sont ordonnés (grossièrement) dans leur ordre d'apparition dans la page HTML.
+- Les noms des IDs ont été choisis pour être les plus explicites possibles, quand ce n'est pas le cas est précisé
+ce à quoi ils correspondent.
+- Il a été choisi d'utiliser les IDs plutôt que les classes pour réduire les dépendances entre les styles des 
+éléments.
+- Les positionnements sont presque tous en absolus. Cela a permis d'arranger très précisément le design de la page
+pour se conformer mieux à ce qui est proposé par le client. On a vu qu'il n'était pas d'usage de faire ça de nos jours
+mais c'est ce qui a le mieux fonctionné et permis d'avancer rapidement.
+- Pour que les pages puissent s'adapter un petit peu aux utilisateurs, les unités vh, vw, etc. ont été utilisées
+pour que le site convienne à tout type "classique" de fenêtre. Le site est cependant mieux optimisé pour les formats 
+paysages. Il n'est pas esthétique mais est utilisable en format portrait.
+- La police utilisée par le client dans les documents n'est pas celle que nous utilisons car nous ne l'avons pas 
+trouvée, mais on a choisi une police qui puisse conserver l'esthétique demandée.
+- Au départ, il était prévu d'utiliser un fichier CSS global pour tout le site -- pour réduire la quantité de fichiers -- 
+mais on s'est aperçu assez vite que les IDs étaient plus clairs et que les recherches dans les fichiers étaient plus 
+simples en associant à chaque HTML son CSS, quitte à devoir copier-coller des styles comme celui de l'entête dans 
+chaque fichier.
+- Comme beaucoup du CSS a été trouvé à force d'essai-erreur et que les styles sont très similaires les uns avec
+les autres, il y a peu de commentaires.
+*/
+
+/*
+- La fonction radial-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au centre du 
+cercle qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- La fonction linear-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au sens du
+dégradé qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- Pour le fond des pages web, un z-index de -1 permet de faire passer tout autre élément au premier plan devant le fond.
+L'opacité permet de rendre les couleurs de l'image moins aggressives.
+- La sous-classe hover est utilisée quand il faut qu'un élément change de style au passage de la souris.
+*/
+
+
+html{
+    height:100%;
+    width: 100%;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+.nomargin{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/*Une div qui correspond à l'entête des pages du site*/
+#entete{
+    background-image: radial-gradient(at 20% 100%, rgb(255, 255, 255),rgb(189, 187, 187));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    height: 20%;
+}
+
+#imageentete{
+    float: left;
+    position: absolute;
+    margin-left: 0%;
+    margin-right: 80%;
+    width: 20%;
+    height: 90%;
+}
+
+/*Le grand titre de l'entête*/
+#titreentete1{
+    color: #CCCC00;
+    font-size: 5.5vw;
+    font-weight: 100;
+    font-family: Arial Narrow, sans-serif;
+    position:fixed;
+    width: 50%;
+    height:50%;
+    top:1%;
+    right:1%;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*La phrase d'accroche de l'entête.*/
+#titreentete2{
+    text-align: right;
+    margin-bottom: 1vmin;
+    font-size: 2.6vw;
+    position:absolute;
+    right: 0%;
+    left:40%;
+    bottom:0%;
+    margin-right: 2vmin;
+}
+
+
+#corps{
+    position: fixed;
+    text-align:center;
+    top: 20%;
+    left:30%;
+    right:30%;
+    color:green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: 1.5vw
+
+}
+
+
+#fond{
+    z-index: -1;
+    opacity: 60%;
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    top: 20%;
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
+}
+
+#formulaire{
+    background-image: radial-gradient(at 20% 100%, rgb(255, 255, 255),rgb(204, 204, 51));
+    padding-top: 4px;
+    font-size: 1.5vw;
+    position:fixed;
+    top:35%;
+    bottom:15%;
+    left:5%;
+    right:80%;
+    background-color:#CCCC66;
+    color:white;
+}
+
+#savoirs{
+    font-size: 1.5vw;
+    position:fixed;
+    top:35%;
+    bottom:15%;
+    left:80%;
+    right:5%;
+    background-color:#CCCC66;
+    color:white;
+}
+
+#bouton1{
+    position:fixed;
+    bottom:10%;
+    color:white;
+    background-color: #CCCC66;
+}
+
+#infos{
+    padding-left: 10px;
+    font-size: 1.5vw;
+    position:fixed;
+    top:40%;
+    bottom:20%;
+    right:30%;
+    left:30%;
+    text-align: left;
+    color:rgb(204, 204, 51);
+    border-style:solid;
+    border-color: #CCCC66;
+    border-width: 2px;
+    text-align: left;
+    background-color: white;
+}
