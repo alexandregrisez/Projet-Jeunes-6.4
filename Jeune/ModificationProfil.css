@@ -1,0 +1,185 @@
+/*
+CSS DE LA PAGE DE MODIFICATION DU PROFIL DU MODULE JEUNE
+*/
+
+/*
+Remarques générales :
+
+- Les éléments sont ordonnés (grossièrement) dans leur ordre d'apparition dans la page HTML.
+- Les noms des IDs ont été choisis pour être les plus explicites possibles, quand ce n'est pas le cas est précisé
+ce à quoi ils correspondent.
+- Il a été choisi d'utiliser les IDs plutôt que les classes pour réduire les dépendances entre les styles des 
+éléments.
+- Pour que les pages puissent s'adapter un petit peu aux utilisateurs, les unités vh, vw, etc. ont été utilisées
+pour que le site convienne à tout type "classique" de fenêtre. Le site est cependant mieux optimisé pour les formats 
+paysages. Il n'est pas esthétique mais est utilisable en format portrait.
+- La police utilisée par le client dans les documents n'est pas celle que nous utilisons car nous ne l'avons pas 
+trouvée, mais on a choisi une police qui puisse conserver l'esthétique demandée.
+- Au départ, il était prévu d'utiliser un fichier CSS global pour tout le site -- pour réduire la quantité de fichiers -- 
+mais on s'est aperçu assez vite que les IDs étaient plus clairs et que les recherches dans les fichiers étaient plus 
+simples en associant à chaque HTML son CSS, quitte à devoir copier-coller des styles comme celui de l'entête dans 
+chaque fichier.
+- Comme beaucoup du CSS a été trouvé à force d'essai-erreur et que les styles sont très similaires les uns avec
+les autres, il y a peu de commentaires.
+- La fonction radial-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au centre du 
+cercle qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- La fonction linear-gradient est utilisée pour les fonds en dégradé. Le premier paramètre correspond au sens du
+dégradé qui est de la première couleur indiquée et qui se fond en la deuxième couleur.
+- Pour le fond des pages web, un z-index de -1 permet de faire passer tout autre élément au premier plan devant le fond.
+L'opacité permet de rendre les couleurs de l'image moins aggressives.
+- La sous-classe hover est utilisée quand il faut qu'un élément change de style au passage de la souris.
+*/
+
+html{
+    height:100%;
+    width: 100%;
+}
+
+
+body{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+.nomargin{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/*Une div qui correspond à l'entête des pages du site*/
+#entete {
+    background-image: radial-gradient(at 20% 100%, rgb(255, 255, 255),rgb(189, 187, 187));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    height: 20%;
+    border-bottom:solid 5px #e60080;
+}
+
+#imageentete{
+    float: left;
+    position: absolute;
+    margin-left: 0%;
+    margin-right: 80%;
+    width: 20%;
+    height: 90%;
+}
+
+/*Le grand titre de l'entête*/
+#titreentete1{
+    color: #e60080;
+    font-size: 6.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    position:absolute;
+    width: 70%;
+    height:50%;
+    bottom:47%;
+    top:3%;
+    left:38%;
+    right:2%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*
+Div invisible en positionnement relatif pour remplir la place que prendrait normalement l'entête sans 
+positionnement absolu.
+Cela pour ne pas que le corps et l'entête se chevauchent.
+*/
+#invisible{
+    z-index:-2;
+    position:relative;
+    height:20%;
+    top:0;
+}
+
+
+#corps{
+    position: relative;
+    width:90%;
+    left:5%;
+    right:5%;
+    color:rgb(87, 87, 87);
+    font-size: 1.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#fond{
+    z-index: -1;
+    opacity: 60%;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 10%;
+    bottom: 10%;
+    right: 15%;
+    left: 15%;
+}
+
+#titre{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #e60080;
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+
+#boutonformulaire{
+    font-size: 1.5vw;
+    border: 2px solid #e60080;
+    background-color: rgb(235, 235, 235);
+    color:#e60080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#boutonformulaire:hover{
+    border: 2px solid #e60080;
+    background-color: rgb(196, 196, 196);
+    color:#e60080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.vert{
+	color:green;
+}
+
+#rouge{
+	color:rgb(255, 0, 0);
+}
+
+#lien{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #e60080;
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#lien:hover{
+	text-decoration:underline;    
+}
+
+
+
+
+
+
+
+
