@@ -8,7 +8,13 @@ Cette fonction prend un email en paramètre et renvoie un tableau de tableaux qu
 les demandes de référence associées à l'email.
 */
 function recherche_demandes($email){
+	if(file_exists("demandes.txt")==false){
+		return [];
+	}
     $database=fopen("demandes.txt","r+");
+	if(!$database){
+		return [];
+	}
     $buffer="123";
 	$TAB=[];
     $tab=[];

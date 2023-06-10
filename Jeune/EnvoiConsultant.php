@@ -189,6 +189,9 @@ Cette fonction renvoie un tableau de tableaux correspondant à toutes les demand
 Elle renvoie un tableau vide si un problème survient où si l'utilisateur n'a pas encore de demandes valides.
 */
 function demandes_validees($email){
+    if(!(file_exists("demandes.txt"))){
+		return [];
+	}
     $database=fopen("demandes.txt","r+");
 	if(!$database){
         return [];
