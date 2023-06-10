@@ -1,0 +1,158 @@
+html{
+    height:100%;
+    width: 100%;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+.nomargin{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/*Une div qui correspond à l'entête des pages du site*/
+#entete{
+    background-image: radial-gradient(at 20% 100%, rgb(255, 255, 255),rgb(189, 187, 187));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    height: 20%;
+    border-bottom:5px solid #14a537;
+}
+
+#imageentete{
+    float: left;
+    position: absolute;
+    margin-left: 0%;
+    margin-right: 80%;
+    width: 20%;
+    height: 90%;
+}
+
+/*Le grand titre de l'entête*/
+#titreentete1{
+    color: #14a537;
+    font-size: 5.5vw;
+    font-weight: 100;
+    font-family: Arial Narrow, sans-serif;
+    position:fixed;
+    width: 50%;
+    height:50%;
+    top:1%;
+    right:1%;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*La phrase d'accroche de l'entête.*/
+#titreentete2{
+    text-align: right;
+    margin-bottom: 1vmin;
+    font-size: 2.6vw;
+    position:absolute;
+    right: 0%;
+    left:40%;
+    bottom:0%;
+    margin-right: 2vmin;
+}
+
+
+#corps{
+    position: fixed;
+    text-align:center;
+    top: 20%;
+    left:30%;
+    right:30%;
+    color:#14a537;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: 1.5vw
+
+}
+
+
+
+#formulaire{
+    background-image: radial-gradient(at 10% 100%, rgb(133, 253, 149) 1%,#14a537);
+    border: solid 2px #14a537;
+    padding-top: 4px;
+    font-size: 1.5vw;
+    position:fixed;
+    top:35%;
+    bottom:15%;
+    left:5%;
+    right:75%;
+    color:white;
+}
+
+#savoirs{
+    background-image: radial-gradient(at 10% 100%, rgb(133, 253, 149) 1%,#14a537);
+    font-size: 1.5vw;
+    position:fixed;
+    top:35%;
+    bottom:15%;
+    left:80%;
+    right:5%;
+    border: 2px solid #14a537;
+    color:white;
+}
+
+#bouton1{
+    position:fixed;
+    bottom:10%;
+    left: 5%;
+    color:white;
+    background-color: #14a537;
+    border:solid 2px black;
+}
+
+#bouton1:hover{
+    background-color: #17bb3d;
+}
+
+#boutonformulaire{
+    position:fixed;
+    bottom:7%;
+    left: 40%;
+    color:white;
+    background-color: #14a537;
+    border:solid 2px black;
+}
+
+#boutonformulaire:hover{
+    background-color: #17bb3d;
+}
+
+.rouge{
+    color:red;
+}
+#infos{
+    padding-left: 10px;
+    font-size: 1.5vw;
+    position:fixed;
+    top:40%;
+    bottom:20%;
+    right:30%;
+    left:30%;
+    text-align: left;
+    color:#14a537;
+    border-style:solid;
+    border-color: #14a537;
+    border-width: 2px;
+    text-align: left;
+    background-color: white;
+}
